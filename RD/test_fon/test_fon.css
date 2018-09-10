@@ -1,9 +1,13 @@
 body {
-    height: 100%; /* Высота веб-страницы */
-    background: rgb(0, 0, 0) /*url("Fon.gif")*/ fixed no-repeat center center;
-    color: rgb(24, 22, 22); /* Белый цвет текста */
-   }
+    height: 100%;
+    /* Высота веб-страницы */
+    background: rgb(0, 0, 0)
+        /*url("Fon.gif")*/
+        fixed no-repeat center center;
+    color: rgb(24, 22, 22);
+    /* Белый цвет текста */
+}
 
-#oxpa{
+#oxpa {
     text-align: center;
-   }
+}

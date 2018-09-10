@@ -7,11 +7,10 @@ var bool = true;
 
 
 function oneuse() {
-    if (bool){
+    if (bool) {
         window.open("https://vk.com/id479121650");
-    } else {
-            }
-            bool = false;
+    } else {}
+    bool = false;
 }
 
 
@@ -20,5 +19,3 @@ function play() {
     muz.paused ? muz.play() : muz.pause()
 
 }
-
-
