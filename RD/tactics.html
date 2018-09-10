@@ -1,0 +1,1246 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ТАКТИКИ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="tactics.js"></script>
+  <style>
+      .phase_1 {
+          padding-top: 10px;
+          padding-left: 10px;
+      }
+      .phase_2 {
+          padding-left: 10px;
+      }
+      .card-body{
+          background-color: #E6E6FA;
+          border-radius: 10px;
+      }
+      .Tooltips {
+          text-align:center;
+      }
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      <!--height: 100%;-->
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+      #button {
+       background-color:#E6E6FA;
+       border: 5px;
+       border-radius: 9px;
+       padding: 5px 10px;
+       text-align: center;
+       font-size: 14px;
+       cursor: pointer;
+      }
+      .header {
+          font-size: 56px;
+      }
+      .health {
+          text-align:center;
+          font-size: 13px;
+      }
+      .healthheader {
+          text-align:center;
+          font-size:16px;
+      }
+  </style>
+   <link rel="shortcut icon" href="RD_New_Logo.png">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="">Running Death</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+              <li><a href="index.html">Главная</a></li>
+              <li class="active"><a href="tactics.html">Тактики</a></li>
+              <li><a href="guides.html">Гайды</a></li>
+              <li><a href="communications.html">Связь с нами</a></li>
+              <li><a href="addons.html">Аддоны</a></li>
+              <li><a href="BIS.html">BIS листы</a></li>
+              <li><a href="macro.html">полезные патчи</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#1" >Лорд Ребрад</a></p><br>
+      <p><a href="#2" >Леди Смертельный Шепот</a></p><br>
+      <p><a href="#3" >Бой на кораблях</a></p><br>
+      <p><a href="#4" >Саурфанг Смертоносный</a></p><br>
+      <p><a href="#5" >Тухлопуз</a></p><br>
+      <p><a href="#6" >Гниломорд</a></p><br>
+      <p><a href="#7" >Профессор Мерзоцид</a></p><br>
+      <p><a href="#8" >Совет принцев крови</a></p><br>
+      <p><a href="#9" >Кровавая королева Лана’Тель</a></p><br>
+      <p><a href="#10">Валитрия Сноходица</a></p><br>
+      <p><a href="#11">Синдрагоса</a></p><br>
+      <p><a href="#12">Король-Лич</a></p><br>
+      <p><a href="#13">Король-Лич<img src="SSS/IH.png"></a></p><br>
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <p><a name="14"></a></p> 
+        <p align="center" class="header"><b>ТАКТИКИ</b></p>
+      <p><a name="1"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img height="100%" width="100%" src="SSS/ui-ej-boss-lord-marrowgar.png" class="img-responsive" style="width:200%;" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">6,972,500 [10 об]<br>
+                                                                                                                                                                                                                                                                                                                           10,500,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                                           23,700,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                                           31,376,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  7 минут<p></p>'>
+            Лорд Ребрад
+        </h2>
+        <p align="justify">Являясь первым боссом рейда, Лорд Ребрад не слишком сложный босс. В битве потребуется 2 (3 в 25-ке) танка для разделения урона от рассекающих ударов. Кроме этого, Ребрад применяет заклинание Холодное пламя на игроков, стоящих поодаль. Если же все стоят в самом боссе, босс выберет целью одного из танков. Это заклинание создает линию синего огня, наносящего серьезный урон всем, кто стоит в нем — отходите на несколько шагов от огня чтобы избежать получение урона.
+            <br><br>Во время боя Лорд Ребрад использует Костяной шип, пронзая одного игрока (3 в 25-ке). Пронзенные игроки получают физический урон, не могут двигаться или атаковать и теряют 10% здоровья каждую секунду. Дамагеры должны "убить" шипы как можно быстрее.
+            <br><br>Последняя способность босса, о которой стоит побеспокоится, это Вихрь костей. Во время Вихря босс двигается очень быстро и набрасывается на игроков, останавливаясь на их позициях на несколько секунд, а затем меняя цель. Вихрь костей наносит колоссальный физический урон, особенно если вы носите ткань или кожу - отбегайте от босса и не паникуйте, его наскок не смертелен, но наносит огромный урон. Стоит также заметить, что урон от Вихря зависит от расстояния до босса: чем дальше от Ребрада находится персонаж, тем меньше урона он получает. Пусть танки соберутся возле босса в последние 3-4 секунды вихря, чтобы поглотить урон от первого рассекающего удара.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>: В героическом режиме есть два ключевых отличия, не беря в счет увеличенный урон от автоатаки босса. Во-первых, Холодный огонь остается гореть на земле 8 секунд вместо 3. Это ограничивает передвижение после Вихря. Во-вторых, Ребрад продолжает нанизывать игроков на шипы во время Вихря костей.
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_1">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1_10N" aria-controls="collapseThree" onclick="toggle1Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1_10H" aria-controls="collapseThree" onclick="toggle1Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1_25N" aria-controls="collapseThree" onclick="toggle1NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1_25H" aria-controls="collapseThree" onclick="toggle1HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse1_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Лорд Ребрад</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Секущий удар</b> - Наносит 200% урона от оружия, разделенного поровну между целью и двумя ближайшими союзниками.</li>
+                        <li><img src="SSS/spell_fire_bluehellfire.jpg" alt="spell_fire_bluehellfire" width="16px"> <b>Холодное пламя</b> - Наносит 6 000 урона от магии льда каждую секунду в течении 3 секунд всем игрокам, стоящим в огне.</li>
+                        <li><img src="SSS/inv_bone_skull_04.jpg" alt="inv_bone_skull_04" width="16px"> <b>Костяной шип</b> - Пускает шип в случайного игрока, пронзая его костяным шипом, мгновенно нанося 9 000 физического урона и дополнительно 10% здоровья каждую секунду, пока шип не уничтожен.</li>
+                        <li><img src="SSS/ability_gouge.jpg" alt="ability_gouge" width="16px"> <b>Вихрь костей</b> - Наносит до 6 000 физического урона всем игрокам каждые 2 секунды. Игроки, находящиеся близко к боссу, получают больше урона. Вихрь длится 20 секунд.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse1_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Лорд Ребрад</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Секущий удар</b> - Наносит 200% урона от оружия, разделенного поровну между целью и двумя ближайшими союзниками.</li>
+                        <li><img src="SSS/spell_fire_bluehellfire.jpg" alt="spell_fire_bluehellfire" width="16px"> <b>Холодное пламя</b> - Наносит 9 000 урона от магии льда каждую секунду в течении 8 секунд всем игрокам, стоящим в огне.</li>
+                        <li><img src="SSS/inv_bone_skull_04.jpg" alt="inv_bone_skull_04" width="16px"> <b>Костяной шип</b> - Пускает шип в случайного игрока, пронзая его костяным шипом, мгновенно нанося 9 000 физического урона и дополнительно 10% здоровья каждую секунду, пока шип не уничтожен.</li>
+                        <li><img src="SSS/ability_gouge.jpg" alt="ability_gouge" width="16px"> <b>Вихрь костей</b> - Наносит до 12 000 физического урона всем игрокам каждые 2 секунды. Игроки, находящиеся близко к боссу, получают больше урона. Вихрь длится 30 секунд.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse1_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Лорд Ребрад</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Секущий удар</b> - Наносит 300% урона от оружия, разделенного поровну между целью и двумя ближайшими союзниками.</li>
+                        <li><img src="SSS/spell_fire_bluehellfire.jpg" alt="spell_fire_bluehellfire" width="16px"> <b>Холодное пламя</b> - Наносит 8 000 урона от магии льда каждую секунду в течении 3 секунд всем игрокам, стоящим в огне.</li>
+                        <li><img src="SSS/inv_bone_skull_04.jpg" alt="inv_bone_skull_04" width="16px"> <b>Костяной шип</b> - Пускает шип в случайного игрока, пронзая его костяным шипом, мгновенно нанося 9 000 физического урона и дополнительно 10% здоровья каждую секунду, пока шип не уничтожен.</li>
+                        <li><img src="SSS/ability_gouge.jpg" alt="ability_gouge" width="16px"> <b>Вихрь костей</b> - Наносит до 12 000 физического урона всем игрокам каждые 2 секунды. Игроки, находящиеся близко к боссу, получают больше урона. Вихрь длится 20 секунд.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse1_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Лорд Ребрад</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Секущий удар</b> - Наносит 300% урона от оружия, разделенного поровну между целью и двумя ближайшими союзниками.</li>
+                        <li><img src="SSS/spell_fire_bluehellfire.jpg" alt="spell_fire_bluehellfire" width="16px"> <b>Холодное пламя</b> - Наносит 11 000 урона от магии льда каждую секунду в течении 3 секунд всем игрокам, стоящим в огне.</li>
+                        <li><img src="SSS/inv_bone_skull_04.jpg" alt="inv_bone_skull_04" width="16px"> <b>Костяной шип</b> - Пускает шип в случайного игрока, пронзая его костяным шипом, мгновенно нанося 9 000 физического урона и дополнительно 10% здоровья каждую секунду, пока шип не уничтожен.</li>
+                        <li><img src="SSS/ability_gouge.jpg" alt="ability_gouge" width="16px"> <b>Вихрь костей</b> - Наносит до 14 000 физического урона всем игрокам каждые 2 секунды. Игроки, находящиеся близко к боссу, получают больше урона. Вихрь длится 30 секунд.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="2"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-lady-deathwhisper.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье/Мана</span><br><span class="health">3,000,000/3,300,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  6,000,000/3,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  13,400,000/11,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  26,800,000/13,900,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  10 минут <p></p>'>
+           Леди Смертный Шепот
+        </h2>
+        <p align="justify"><b>[Фаза 1]</b> Леди Смертный Шепот окружена щитом из маны, которые поглощает весь входящий урон за счет маны. Она атакует рейд, используя Смерть и Разложение и Стрелы Тьмы — ничего опасного. В 25-ке Леди регулярно кастует Контроль Разума на случайного члена рейда, сильно увеличивая все его характеристики — поэтому его надо как можно быстрее нейтрализовать. Как бы то ни было, второй компонент первой фазы может вызвать затруднения.
+            <br><br>Адды появляются волнами с разных сторон комнаты - Адепты и Фанатики. В 10-ке адды спавнятся только с одной стороны, периодически меняя её. В 25-ке же треш идет с левой и правой стороны, а один моб появляется у входа в комнату. Убейте их как можно быстрее чтобы продолжить сжигать ману боссу. Кайтите Кособоких Фанатиков и смотрите за теми, кто кастует Темное мученичество — такие мобы снова врываются в бой через несколько секунд после смерти. Кастерам стоит выбрать основной целью Фанатиков, а мили - Адептов. Когда все адды мертвы, возвращайтесь дамажить босса.
+            <br><br><b>[Фаза 2]</b> начинается после того, как мана босса заканчивается, и магический щит пробит. Постарайтесь не оставить ни одного треш-моба к этому времени. В это время босс становится активным, и один из танков должен быстро взять босса на себя, так как аггро не сбрасывается. Оффтанку придется таунтить босса — Леди накладывает на цель стакающийся дебафф, снижающий генерируемую угрозу. Два танка таунтят босса на себя по очереди каждые 3 стака дебаффа.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+            <ul>
+             <li>На второй фазе продолжают спавниться Культисты — один со стороны входа в 10-ке, и 3 с одной из боковых сторон в 25-ке.</li>
+             <li>Леди Смертный Шепот периодически берет 1-го (10 хм) или 3-х (25 хм) игроков под контроль.</li>
+             <li>Босс приобретает иммунитет к таунту на второй фазе, поэтому танки всегда должны быть первыми в аггро листе(см. Omen).</li>
+            </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_2">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2_10N" aria-controls="collapseThree" onclick="toggle2Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2_10H" aria-controls="collapseThree" onclick="toggle2Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2_25N" aria-controls="collapseThree" onclick="toggle2NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2_25H" aria-controls="collapseThree" onclick="toggle2HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse2_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_detectlesserinvisibility.jpg" alt="spell_shadow_detectlesserinvisibility" width="16px"> <b>Барьер маны</b> - Поглощает весь получаемый боссом урон, сжигая его ману.</li>
+                        <li><img src="SSS/spell_shadow_shadowbolt.jpg" alt="spell_shadow_shadowbolt" width="16px"> <b>Стрела тьмы</b> - Наносит 7 438 - 9 562 урона от магии тьмы текущей цели.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 4 500 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/spell_shadow_shadowpower.jpg" alt="spell_shadow_shadowpower" width="16px"> <b>Темное могущество</b> - Дарует могущество случайному последователю или фанатику, заставляя его заклинания наносить урон по области. Дает невосприимчивость к эффектам прерывания.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frostbolt02.jpg" alt="spell_frost_frostbolt02" width="16px"> <b>Ледяная стрела</b> - Наносит 40 950 - 43 050 урона от магии льда текущей цели. Произнесение заклинания может быть прервано.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_sspell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 4 500 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/ability_hibernation.jpg" alt="ability_hibernation" width="16px"> <b>Прикосновение незначительности</b> - Уменьшает создаваемую угрозу на 20% за каждый стак ауры. Стакается 5 раз.</li>
+                        <li><img src="SSS/spell_shadow_shadowform.jpg" alt="spell_shadow_shadowform" width="16px"> <b>Призвать мстительного духа</b> - Мстительный Дух - Преследует случайную цель и, догнав, использует на нее Вспышку мщения</li>
+                        <li><img src="SSS/warlock_siphonlife.jpg" alt="warlock_siphonlife" width="16px"> <b>Вспышка мщения</b> - Наносит 17 370 - 18 630 урона от магии льда тьмы всем противникам в радиусе 15 ярдов от цели заклинания.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Существа</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> <b>Некротический удар</b> - Наносит 70% урона от оружия и накладывает <img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> Некротический удар, поглощая 9 000 исцеления.</li>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Теневой рассекающий удар</b> - Наносит 14 250 - 15 750 урона от магии тьмы всем игрокам перед фанатиком.</li>
+                        <li><img src="SSS/spell_deathknight_frostfever.jpg" alt="spell_deathknight_frostfever" width="16px"> <b>Озноб</b> - Наносит 2 375 - 2 625 урона от магии льда каждые 3 секунды в течении 15 секунд, уменьшая скорость атаки на 14%. Болезнь.</li>
+                        <li><img src="SSS/ability_creature_cursed_03.jpg" alt="ability_creature_cursed_03" width="16px"> <b>Проклятье оцепенения</b> - Увеличивает время отката заклинаний выбранного игрока на 15 секунд. Действует и на мгновенные заклинания. Проклятье.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse2_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_detectlesserinvisibility.jpg" alt="spell_shadow_detectlesserinvisibility" width="16px"> <b>Барьер маны</b> - Поглощает весь получаемый боссом урон, сжигая его ману.</li>
+                        <li><img src="SSS/spell_shadow_shadowbolt.jpg" alt="spell_shadow_shadowbolt" width="16px"> <b>Стрела тьмы</b> - Наносит  9 188 - 11 812 урона от магии тьмы текущей цели.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 4 500 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет одного игрока на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowpower.jpg" alt="spell_shadow_shadowpower" width="16px"> <b>Темное могущество</b> - Дарует могущество случайному последователю или фанатику, заставляя его заклинания наносить урон по области. Дает невосприимчивость к эффектам прерывания.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frostbolt02.jpg" alt="spell_frost_frostbolt02" width="16px"> <b>Ледяная стрела</b> - Наносит  44 850 - 47 150 урона от магии льда текущей цели. Произнесение заклинания может быть прервано.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_sspell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 6 000 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/ability_hibernation.jpg" alt="ability_hibernation" width="16px"> <b>Прикосновение незначительности</b> - Уменьшает создаваемую угрозу на 20% за каждый стак ауры. Стакается 5 раз.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет одного игрока на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowform.jpg" alt="spell_shadow_shadowform" width="16px"> <b>Призвать мстительного духа</b> - Мстительный Дух - Преследует случайную цель и, догнав, использует на нее Вспышку мщения</li>
+                        <li><img src="SSS/warlock_siphonlife.jpg" alt="warlock_siphonlife" width="16px"> <b>Вспышка мщения</b> - Наносит 17 370 - 18 630 урона от магии льда тьмы всем противникам в радиусе 20 ярдов от цели заклинания.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Существа</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> <b>Некротический удар</b> - Наносит 70% урона от оружия и накладывает <img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> Некротический удар, поглощая 14 000 исцеления.</li>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Теневой рассекающий удар</b> - Наносит 15 913 - 17 587 урона от магии тьмы всем игрокам перед фанатиком.</li>
+                        <li><img src="SSS/spell_deathknight_frostfever.jpg" alt="spell_deathknight_frostfever" width="16px"> <b>Озноб</b> - Наносит 2 375 - 2 625 урона от магии льда каждые 3 секунды в течении 15 секунд, уменьшая скорость атаки на 25%. Болезнь.</li>
+                        <li><img src="SSS/ability_creature_cursed_03.jpg" alt="ability_creature_cursed_03" width="16px"> <b>Проклятье оцепенения</b> - Увеличивает время отката заклинаний выбранного игрока на 15 секунд. Действует и на мгновенные заклинания. Проклятье.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse2_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_detectlesserinvisibility.jpg" alt="spell_shadow_detectlesserinvisibility" width="16px"> <b>Барьер маны</b> - Поглощает весь получаемый боссом урон, сжигая его ману.</li>
+                        <li><img src="SSS/spell_shadow_shadowbolt.jpg" alt="spell_shadow_shadowbolt" width="16px"> <b>Стрела тьмы</b> - Наносит  9 188 - 11 812 урона от магии тьмы текущей цели.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 6 000 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет одного игрока на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowpower.jpg" alt="spell_shadow_shadowpower" width="16px"> <b>Темное могущество</b> - Дарует могущество случайному последователю или фанатику, заставляя его заклинания наносить урон по области. Дает невосприимчивость к эффектам прерывания.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frostbolt02.jpg" alt="spell_frost_frostbolt02" width="16px"> <b>Ледяная стрела</b> - Наносит  50 700 - 53 330 урона от магии льда текущей цели. Произнесение заклинания может быть прервано.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_sspell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 6 000 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/ability_hibernation.jpg" alt="ability_hibernation" width="16px"> <b>Прикосновение незначительности</b> - Уменьшает создаваемую угрозу на 20% за каждый стак ауры. Стакается 5 раз.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет одного игрока на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowform.jpg" alt="spell_shadow_shadowform" width="16px"> <b>Призвать мстительного духа</b> - Мстительный Дух - Преследует случайную цель и, догнав, использует на нее Вспышку мщения</li>
+                        <li><img src="SSS/warlock_siphonlife.jpg" alt="warlock_siphonlife" width="16px"> <b>Вспышка мщения</b> - Наносит 23160 - 24840 урона от магии льда тьмы всем противникам в радиусе 15 ярдов от цели заклинания.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Существа</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> <b>Некротический удар</b> - Наносит 70% урона от оружия и накладывает <img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> Некротический удар, поглощая 14 000 исцеления.</li>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Теневой рассекающий удар</b> - Наносит 15 913 - 17 587 урона от магии тьмы всем игрокам перед фанатиком.</li>
+                        <li><img src="SSS/spell_deathknight_frostfever.jpg" alt="spell_deathknight_frostfever" width="16px"> <b>Озноб</b> - Наносит 2 775 - 3 225 урона от магии льда каждые 3 секунды в течении 15 секунд, уменьшая скорость атаки на 14%. Болезнь.</li>
+                        <li><img src="SSS/ability_creature_cursed_03.jpg" alt="ability_creature_cursed_03" width="16px"> <b>Проклятье оцепенения</b> - Увеличивает время отката заклинаний выбранного игрока на 15 секунд. Действует и на мгновенные заклинания. Проклятье.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse2_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_detectlesserinvisibility.jpg" alt="spell_shadow_detectlesserinvisibility" width="16px"> <b>Барьер маны</b> - Поглощает весь получаемый боссом урон, сжигая его ману.</li>
+                        <li><img src="SSS/spell_shadow_shadowbolt.jpg" alt="spell_shadow_shadowbolt" width="16px"> <b>Стрела тьмы</b> - Наносит  11 375 - 14 625 урона от магии тьмы текущей цели.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 6 000 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет 3-х игроков на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowpower.jpg" alt="spell_shadow_shadowpower" width="16px"> <b>Темное могущество</b> - Дарует могущество случайному последователю или фанатику, заставляя его заклинания наносить урон по области. Дает невосприимчивость к эффектам прерывания.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frostbolt02.jpg" alt="spell_frost_frostbolt02" width="16px"> <b>Ледяная стрела</b> - Наносит  58 500 - 61 500 урона от магии льда текущей цели. Произнесение заклинания может быть прервано.</li>
+                        <li><img src="SSS/spell_shadow_deathanddecay.jpg" alt="spell_sspell_shadow_deathanddecay" width="16px"> <b>Смерть и разложение</b> - Наносит 6 000 урона от магии тьмы каждую секунду всем врагам, попавшим в зону действия заклинания. Длится 10 секунд.</li>
+                        <li><img src="SSS/ability_hibernation.jpg" alt="ability_hibernation" width="16px"> <b>Прикосновение незначительности</b> - Уменьшает создаваемую угрозу на 20% за каждый стак ауры. Стакается 5 раз.</li>
+                        <li><img src="SSS/inv_belt_18.jpg" alt="inv_belt_18" width="16px"> <b>Контроль над разумом</b> - Подчиняет 3-х игроков на 12 сек, повышая урон на 200%, а исцеление - на 500%.</li>
+                        <li><img src="SSS/spell_shadow_shadowform.jpg" alt="spell_shadow_shadowform" width="16px"> <b>Призвать мстительного духа</b> - Мстительный Дух - Преследует случайную цель и, догнав, использует на нее Вспышку мщения</li>
+                        <li><img src="SSS/warlock_siphonlife.jpg" alt="warlock_siphonlife" width="16px"> <b>Вспышка мщения</b> - Наносит 23160 - 24840 урона от магии льда тьмы всем противникам в радиусе 20 ярдов от цели заклинания.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Существа</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> <b>Некротический удар</b> - Наносит 70% урона от оружия и накладывает <img src="SSS/spell_deathknight_plaguestrike.jpg" alt="spell_deathknight_plaguestrike" width="16px"> Некротический удар, поглощая 14 000 исцеления.</li>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Теневой рассекающий удар</b> - Наносит 19 000 - 21 000 урона от магии тьмы всем игрокам перед фанатиком.</li>
+                        <li><img src="SSS/spell_deathknight_frostfever.jpg" alt="spell_deathknight_frostfever" width="16px"> <b>Озноб</b> - Наносит 3 413 - 3 587 урона от магии льда каждые 3 секунды в течении 15 секунд, уменьшая скорость атаки на 25%. Болезнь.</li>
+                        <li><img src="SSS/ability_creature_cursed_03.jpg" alt="ability_creature_cursed_03" width="16px"> <b>Проклятье оцепенения</b> - Увеличивает время отката заклинаний выбранного игрока на 15 секунд. Действует и на мгновенные заклинания. Проклятье.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="3"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p></p><p align="center"><img src="SSS/Gunship_Battle.jpg" class="img-responsive" style="width:100%" alt="Image"></p><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  Отсутствует <p></p>'>
+            Бой на кораблях
+        </h2>
+        <p align="justify">Для победы в битве рейду потребуется разделится на защитников своего корабля и атакующих вражеского. Рекомендуется отправить на атаку как можно больше людей, оставив на обороне только пушки. Когда атакующие убили мага и ракетчиков на борту вражеского корабля они должны вернутся на палубу своего собственного корабля и помочь защитникам.
+            <br><br>Игроки, оставшиеся на собственном корабле, должны позаботится о двух вещах. Во-первых, 2 игрока (4 в битве на 25 игроков) должны занять пушки и атаковать вражеский корабль. Они отстреливают ракетчиков, которые помечают определенные зоны на вашем корабле и пускают туда медленные ракеты — уходите от них, это просто. Кроме них, по игрокам стреляют и метатели топоров. Через какое-то время появляется маг, замораживающий ваши пушки. Атакующие игроки должны уничтожить его, пока защитники отражают атаку Разрушителей и Сержанта. Чем больше времени они живут, тем больше урона они наносят, становясь намного опаснее. Бойцам ближнего боя стоит опасаться вихря Сержанта. После того, как маг мертв, 2 (или 4) защитника могут вернуться в работающие пушки и продолжить огонь по вражескому игроку.
+            <br><br>У атакующих тоже есть несколько проблем. Саурфанг/Мурадин будет пытаться уничтожить рейд - выделите отдельного танка для него. Обратите внимание на стакающийся бафф <img src="SSS/ability_warrior_rampage.jpg" alt="ability_warrior_rampage" width="16px"> <b>Боевое неистовство</b>, увеличивающий наносимый урон командира. Чтобы снять бафф с босса, всем игрокам потребуется покинуть вражеский корабль на 16 секунд. Бить лидера смысла нет, сфокусируйте урон на магах.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:
+        <ul>
+        <li>Ракетное орудие отталкивает игроков на героическом режиме.<br></li>
+    </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_3">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3_10N" aria-controls="collapseThree" onclick="toggle3Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3_10H" aria-controls="collapseThree" onclick="toggle3Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3_25N" aria-controls="collapseThree" onclick="toggle3NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3_25H" aria-controls="collapseThree" onclick="toggle3HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse3_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Пушка боевого корабля</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_elemental_primal_fire.jpg" alt="inv_elemental_primal_fire" width="16px"> <b>Жар</b> - Пушки боевых кораблей используют Жар как ресурс. Пушечная вспышка создает жар, а Опаляющий выстрел поглощает его. Когда пушка накапливает 100 жара, происходит <img src="SSS/spell_fire_flameshock.jpg" alt="spell_fire_flameshock" width="16px">  Перегрев, и её становится невозможно использовать в течении 3 секунд.</li>
+                        <li><img src="SSS/ability_vehicle_siegeenginecannon.jpg" alt="ability_vehicle_siegeenginecannon" width="16px"> <b>Пушечный выстрел</b> - Наносит 1 000 осадного урона и создает 6-10 жара.</li>
+                        <li><img src="SSS/ability_vehicle_demolisherflamecatapult.jpg" alt="ability_vehicle_demolisherflamecatapult" width="16px"> <b>Опаляющий выстрел</b> - Наносит 1 000 урона от огня и дополнительный урон за каждую единицу жара. Поглощает весь жар пушки.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Верховный правитель Саурфанг</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Рассекающий удар</b> - Наносит 110% урона от оружия трем целям перед Саурфангом или Мурадином.</li>
+                        <li><img src="SSS/ability_warrior_rampage.jpg" alt="ability_warrior_rampage" width="16px"> <b>Боевое неистовство</b> - Увеличивает весь наносимый урон на 10%, стакается. Длится 16 секунд, сбрасываясь до максимального значения каждую атаку. Новый стак накладывается каждый раз, когда Саурфанг атакуют цель.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                <h5 class="phase_1"><b>Кор'кронский боевой маг</b></h5>
+                <ul>
+                    <li><img src="SSS/spell_frost_frost.jpg" alt="spell_frost_frost" width="16px"> <b>Заморозка</b> - Замораживает пушки противника, заставляя огонь прекратиться. Заклинание прерывается только после смерти.</li>
+                </ul>
+                </div>
+            </div>
+                <div id="collapse3_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                    <div class="card-body">
+                        <h5 class="phase_1"><b>Пушка боевого корабля</b></h5>
+                        <ul>
+                            <li><img src="SSS/inv_elemental_primal_fire.jpg" alt="inv_elemental_primal_fire" width="16px"> <b>Жар</b> - Пушки боевых кораблей используют Жар как ресурс. Пушечная вспышка создает жар, а Опаляющий выстрел поглощает его. Когда пушка накапливает 100 жара, происходит <img src="SSS/spell_fire_flameshock.jpg" alt="spell_fire_flameshock" width="16px">  Перегрев, и её становится невозможно использовать в течении 3 секунд.</li>
+                            <li><img src="SSS/ability_vehicle_siegeenginecannon.jpg" alt="ability_vehicle_siegeenginecannon" width="16px"> <b>Пушечный выстрел</b> - Наносит 1 000 осадного урона и создает 6-10 жара.</li>
+                            <li><img src="SSS/ability_vehicle_demolisherflamecatapult.jpg" alt="ability_vehicle_demolisherflamecatapult" width="16px"> <b>Опаляющий выстрел</b> - Наносит 1 000 урона от огня и дополнительный урон за каждую единицу жара. Поглощает весь жар пушки.</li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="phase_1"><b>Верховный правитель Саурфанг</b></h5>
+                        <ul>
+                            <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Рассекающий удар</b> - Наносит 110% урона от оружия трем целям перед Саурфангом или Мурадином.</li>
+                            <li><img src="SSS/ability_warrior_rampage.jpg" alt="ability_warrior_rampage" width="16px"> <b>Боевое неистовство</b> - Увеличивает весь наносимый урон на 12%, стакается. Длится 16 секунд, сбрасываясь до максимального значения каждую атаку. Новый стак накладывается каждый раз, когда Саурфанг атакуют цель.</li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="phase_1"><b>Кор'кронский боевой маг</b></h5>
+                        <ul>
+                            <li><img src="SSS/spell_frost_frost.jpg" alt="spell_frost_frost" width="16px"> <b>Заморозка</b> - Замораживает пушки противника, заставляя огонь прекратиться. Заклинание прерывается только после смерти.</li>
+                        </ul>
+                    </div>
+                </div>
+            <div id="collapse3_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Пушка боевого корабля</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_elemental_primal_fire.jpg" alt="inv_elemental_primal_fire" width="16px"> <b>Жар</b> - Пушки боевых кораблей используют Жар как ресурс. Пушечная вспышка создает жар, а Опаляющий выстрел поглощает его. Когда пушка накапливает 100 жара, происходит <img src="SSS/spell_fire_flameshock.jpg" alt="spell_fire_flameshock" width="16px">  Перегрев, и её становится невозможно использовать в течении 3 секунд.</li>
+                        <li><img src="SSS/ability_vehicle_siegeenginecannon.jpg" alt="ability_vehicle_siegeenginecannon" width="16px"> <b>Пушечный выстрел</b> - Наносит 1 000 осадного урона и создает 6-10 жара.</li>
+                        <li><img src="SSS/ability_vehicle_demolisherflamecatapult.jpg" alt="ability_vehicle_demolisherflamecatapult" width="16px"> <b>Опаляющий выстрел</b> - Наносит 1 000 урона от огня и дополнительный урон за каждую единицу жара. Поглощает весь жар пушки.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Верховный правитель Саурфанг</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Рассекающий удар</b> - Наносит 110% урона от оружия трем целям перед Саурфангом или Мурадином.</li>
+                        <li><img src="SSS/ability_warrior_rampage.jpg" alt="ability_warrior_rampage" width="16px"> <b>Боевое неистовство</b> - Увеличивает весь наносимый урон на 10%, стакается. Длится 16 секунд, сбрасываясь до максимального значения каждую атаку. Новый стак накладывается каждый раз, когда Саурфанг атакуют цель.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Кор'кронский боевой маг</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frost.jpg" alt="spell_frost_frost" width="16px"> <b>Заморозка</b> - Замораживает пушки противника, заставляя огонь прекратиться. Заклинание прерывается только после смерти.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse3_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Пушка боевого корабля</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_elemental_primal_fire.jpg" alt="inv_elemental_primal_fire" width="16px"> <b>Жар</b> - Пушки боевых кораблей используют Жар как ресурс. Пушечная вспышка создает жар, а Опаляющий выстрел поглощает его. Когда пушка накапливает 100 жара, происходит <img src="SSS/spell_fire_flameshock.jpg" alt="spell_fire_flameshock" width="16px">  Перегрев, и её становится невозможно использовать в течении 3 секунд.</li>
+                        <li><img src="SSS/ability_vehicle_siegeenginecannon.jpg" alt="ability_vehicle_siegeenginecannon" width="16px"> <b>Пушечный выстрел</b> - Наносит 1 000 осадного урона и создает 6-10 жара.</li>
+                        <li><img src="SSS/ability_vehicle_demolisherflamecatapult.jpg" alt="ability_vehicle_demolisherflamecatapult" width="16px"> <b>Опаляющий выстрел</b> - Наносит 1 000 урона от огня и дополнительный урон за каждую единицу жара. Поглощает весь жар пушки.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Верховный правитель Саурфанг</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warrior_cleave.jpg" alt="ability_warrior_cleave" width="16px"> <b>Рассекающий удар</b> - Наносит 110% урона от оружия трем целям перед Саурфангом или Мурадином.</li>
+                        <li><img src="SSS/ability_warrior_rampage.jpg" alt="ability_warrior_rampage" width="16px"> <b>Боевое неистовство</b> - Увеличивает весь наносимый урон на 12%, стакается. Длится 16 секунд, сбрасываясь до максимального значения каждую атаку. Новый стак накладывается каждый раз, когда Саурфанг атакуют цель.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Кор'кронский боевой маг</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_frost_frost.jpg" alt="spell_frost_frost" width="16px"> <b>Заморозка</b> - Замораживает пушки противника, заставляя огонь прекратиться. Заклинание прерывается только после смерти.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="4"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-deathbringer-saurfang.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">8,785,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  12,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  31,860,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  43,930,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  8 минут <p></p>'>
+            Саурфанг Смертоносный
+        </h2>
+        <p align="justify">Бой с Саурфангом - не из легких. Рейду придется быть начеку всю битву и контролировать отхил босса. Вся схватка однотипна, но она изнурит дамагеров и хилов. Кроме них, в битве потребуется два танка. Основная роль оффтанка - кайтить Кровавых чудовищ и перехватывать босса когда основной танк получает Руну крови.
+            <br><br>Все члены рейда должны разделится так, чтобы Кольцо крови не задело нескольких игроков. Несколько попаданий означает больше урона от Саурфанга из-за Силы крови. Дот, накладываемый боссом на случайных игроков, Кипящая кровь, так же увеличивает стаки Силы крови. Хилерам стоит позаботится об персонажах под Кипящей кровью.
+            <br><br>Когда основной танк подвергается воздействию Руны крови, оффтанк должен стаунтить босса на себя по крайней мере на время действия Руны, чтобы босс не получал исцеления от своих ударов. Когда дебафф Руны спадает (или Руну получает оффтанк), мейн танк должен забрать Саурфанга обратно. Эти операции повторяются до конца схватки.
+            <br><br>Несколько раз во время боя Смертоносный использует Метку падшего воителя на случайного члена рейда. Игроки, получившие эту метку, сильно нуждаются в хиле, равно как и защитных кулдаунах. Здесь полезны защитные кулдауны. При смерти игрока с Меткой падшего воителя Саурфанг исцеляется на огромное количество здоровья, поэтому очень важно особое внимание хилов к персонажам с Меткой.
+            <br><br>Во время битвы Смертоносный призывает 2 (5 в 25-ке) Кровавых чудовища. Крайне важно убивать их как можно быстрее, так как каждый их удар пополняет энергию Смертоносного на 1 (через <img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b>). Когда босс набирает 100 энергии, он использует Метку падшего воителя. Используйте небольшие кулдауны на чудовищ, но оставьте <img src="SSS/ability_shaman_heroism.jpg" alt="ability_shaman_heroism" width="16px"> <b>Героизм</b> на последние 30% здоровья босса, когда он входит в бешенство.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:
+            <ul>
+
+             <li>Смерть игрока под <img src="SSS/spell_deathknight_bladedarmor.jpg" alt="spell_deathknight_bladedarmor" width="16px"> <b>Меткой падшего воителя</b> исцелит Саурфанга на 20% здоровья вместо 5%.<br></li>
+             <li>Кровавые чудовища получают баф <img src="SSS/spell_shadow_felmending.jpg" alt="spell_shadow_felmending" width="16px"> <b>Запах крови</b>.</li>
+            </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_4">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4_10N" aria-controls="collapseThree" onclick="toggle4Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4_10H" aria-controls="collapseThree" onclick="toggle4Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4_25N" aria-controls="collapseThree" onclick="toggle4NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4_25H" aria-controls="collapseThree" onclick="toggle4HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+        <div id="collapse4_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+            <div class="card-body">
+                <h5 class="phase_1"><b>Саурфанг Смертоносный</b></h5>
+                <ul>
+                    <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Саурфанг или его Кровавые чудовища наносят удар какой-либо способность. Увеличивает энергию босса на 1.</li>
+                    <li><img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> - Увеличивает урон и размер босса на 1%. Накладывается через <img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b></li>
+                    <li><img src="SSS/spell_deathknight_bladedarmor.jpg" alt="spell_deathknight_bladedarmor" width="16px"> <b>Метка падшего воителя</b> - Атаки Саурфанга ближнего боя наносят урон не только танку, но и отмеченным целям. Игроки с метками получают 4 275 - 4 725 физического урона за каждую атаку Смертоносного. Смерть игрока с меткой вызывает исцеление Саурфанга на 5%. Метка используется Саурфангом когда его энергия достигает 100, потпитываясь от Уз Крови.</li>
+                    <li><img src="SSS/spell_shadow_deathpact.jpg" alt="spell_shadow_deathpact" width="16px"> <b>Бешенство</b> - Увеличивает скорость атаки босса на 30% и размер на 20%. Используется Саурфангом, когда уровень его здоровья падает ниже 30%.</li>
+                    <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кипящая кровь</b> - Наносит 5 000 физического урона каждые 3 секунды в течении 24 секунд. Используется на случайного игрока.</li>
+                    <li><img src="SSS/spell_shadow_rune.jpg" alt="spell_shadow_rune" width="16px"> <b>Призыв кровавых чудовищ</b> - Призывает 2 Кровавых чудовища.</li>
+                    <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кольцо крови</b> - Наносит 7 600 - 8 400 физического урона случайной цели и всем игрокам вокруг нее в радиусе 12 метров.</li>
+                    <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b> - Отмечает цель, накладывая дебафф <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b>, заставляя атаки босса высасывать 5 100 - 6 900 здоровья из цели, восстанавливая в 10 раз больше. Длится 20 секунд.</li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="phase_1"><b>Кровавые чудовища</b></h5>
+                <ul>
+                    <li><img src="SSS/inv_misc_leatherscrap_11.jpg" alt="inv_misc_leatherscrap_11" width="16px"> <b>Устойчивая кожа</b> - Урон от заклинаний, наносящих урон по области, снижается на 90%, а урон от болезней - на 70%.</li>
+                    <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Кровавые чудовища наносят удар. Увеличивает энергию босса на 1.</li>
+                </ul>
+            </div>
+        </div>
+            <div id="collapse4_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Саурфанг Смертоносный</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Саурфанг или его Кровавые чудовища наносят удар какой-либо способность. Увеличивает энергию босса на 1.</li>
+                        <li><img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> - Увеличивает урон и размер босса на 1%. Накладывается через <img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b></li>
+                        <li><img src="SSS/spell_deathknight_bladedarmor.jpg" alt="spell_deathknight_bladedarmor" width="16px"> <b>Метка падшего воителя</b> - Атаки Саурфанга ближнего боя наносят урон не только танку, но и отмеченным целям. Игроки с метками получают 4 275 - 4 725 физического урона за каждую атаку Смертоносного. Смерть игрока с меткой вызывает исцеление Саурфанга на 20%. Метка используется Саурфангом когда его энергия достигает 100, потпитываясь от Уз Крови.</li>
+                        <li><img src="SSS/spell_shadow_deathpact.jpg" alt="spell_shadow_deathpact" width="16px"> <b>Бешенство</b> - Увеличивает скорость атаки босса на 30% и размер на 20%. Используется Саурфангом, когда уровень его здоровья падает ниже 30%.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кипящая кровь</b> - Наносит 5 000 физического урона каждые 3 секунды в течении 24 секунд. Используется на случайного игрока.</li>
+                        <li><img src="SSS/spell_shadow_rune.jpg" alt="spell_shadow_rune" width="16px"> <b>Призыв кровавых чудовищ</b> - Призывает 2 Кровавых чудовища.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кольцо крови</b> - Наносит 7 600 - 8 400 физического урона случайной цели и всем игрокам вокруг нее в радиусе 12 метров.</li>
+                        <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b> - Отмечает цель, накладывая дебафф <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b>, заставляя атаки босса высасывать 5 100 - 6 900 здоровья из цели, восстанавливая в 10 раз больше. Длится 20 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Кровавые чудовища</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_leatherscrap_11.jpg" alt="inv_misc_leatherscrap_11" width="16px"> <b>Устойчивая кожа</b> - Урон от заклинаний, наносящих урон по области, снижается на 90%, а урон от болезней - на 70%.</li>
+                        <li><img src="SSS/spell_shadow_felmending.jpg" alt="spell_shadow_felmending" width="16px"> <b>Запах крови</b> - Саурфанг баффает Кровавых чудовищ, заставляя их уменьшать скорость передвижения всех игроков на 80% и увеличивать наносимый чудовищами урон на 300%. Длится 10 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Кровавые чудовища наносят удар. Увеличивает энергию босса на 1.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse4_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Саурфанг Смертоносный</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Саурфанг или его Кровавые чудовища наносят удар какой-либо способность. Увеличивает энергию босса на 1.</li>
+                        <li><img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> - Увеличивает урон и размер босса на 1%. Накладывается через <img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b></li>
+                        <li><img src="SSS/spell_deathknight_bladedarmor.jpg" alt="spell_deathknight_bladedarmor" width="16px"> <b>Метка падшего воителя</b> - Атаки Саурфанга ближнего боя наносят урон не только танку, но и отмеченным целям. Игроки с метками получают 6 175 - 6 825 физического урона за каждую атаку Смертоносного. Смерть игрока с меткой вызывает исцеление Саурфанга на 5%. Метка используется Саурфангом когда его энергия достигает 100, потпитываясь от Уз Крови.</li>
+                        <li><img src="SSS/spell_shadow_deathpact.jpg" alt="spell_shadow_deathpact" width="16px"> <b>Бешенство</b> - Увеличивает скорость атаки босса на 30% и размер на 20%. Используется Саурфангом, когда уровень его здоровья падает ниже 30%.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кипящая кровь</b> - Наносит 5 000 физического урона каждые 3 секунды в течении 24 секунд. Используется на случайного игрока.</li>
+                        <li><img src="SSS/spell_shadow_rune.jpg" alt="spell_shadow_rune" width="16px"> <b>Призыв кровавых чудовищ</b> - Призывает 5 Кровавых чудовищ.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кольцо крови</b> - Наносит 9 500 - 10 500 физического урона случайной цели и всем игрокам вокруг нее в радиусе 12 метров.</li>
+                        <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b> - Отмечает цель, накладывая дебафф <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b>, заставляя атаки босса высасывать 5 950 - 8 050 здоровья из цели, восстанавливая в 10 раз больше. Длится 20 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Кровавые чудовища</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_leatherscrap_11.jpg" alt="inv_misc_leatherscrap_11" width="16px"> <b>Устойчивая кожа</b> - Урон от заклинаний, наносящих урон по области, снижается на 90%, а урон от болезней - на 70%.</li>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Кровавые чудовища наносят удар. Увеличивает энергию босса на 1.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse4_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Саурфанг Смертоносный</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Саурфанг или его Кровавые чудовища наносят удар какой-либо способность. Увеличивает энергию босса на 1.</li>
+                        <li><img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> - Увеличивает урон и размер босса на 1%. Накладывается через <img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b></li>
+                        <li><img src="SSS/spell_deathknight_bladedarmor.jpg" alt="spell_deathknight_bladedarmor" width="16px"> <b>Метка падшего воителя</b> - Атаки Саурфанга ближнего боя наносят урон не только танку, но и отмеченным целям. Игроки с метками получают 6 175 - 6 825 физического урона за каждую атаку Смертоносного. Смерть игрока с меткой вызывает исцеление Саурфанга на 20%. Метка используется Саурфангом когда его энергия достигает 100, потпитываясь от Уз Крови.</li>
+                        <li><img src="SSS/spell_shadow_deathpact.jpg" alt="spell_shadow_deathpact" width="16px"> <b>Бешенство</b> - Увеличивает скорость атаки босса на 30% и размер на 20%. Используется Саурфангом, когда уровень его здоровья падает ниже 30%.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кипящая кровь</b> - Наносит 5 000 физического урона каждые 3 секунды в течении 24 секунд. Используется на случайного игрока.</li>
+                        <li><img src="SSS/spell_shadow_rune.jpg" alt="spell_shadow_rune" width="16px"> <b>Призыв кровавых чудовищ</b> - Призывает 5 Кровавых чудовищ.</li>
+                        <li><img src="SSS/spell_deathknight_bloodboil.jpg" alt="spell_deathknight_bloodboil" width="16px"> <b>Кольцо крови</b> - Наносит 9 500 - 10 500 физического урона случайной цели и всем игрокам вокруг нее в радиусе 12 метров.</li>
+                        <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b> - Отмечает цель, накладывая дебафф <li><img src="SSS/spell_deathknight_deathstrike.jpg" alt="spell_deathknight_deathstrike" width="16px"> <b>Руна крови</b>, заставляя атаки босса высасывать 5 950 - 8 050 здоровья из цели, восстанавливая в 10 раз больше. Длится 20 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Кровавые чудовища</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_leatherscrap_11.jpg" alt="inv_misc_leatherscrap_11" width="16px"> <b>Устойчивая кожа</b> - Урон от заклинаний, наносящих урон по области, снижается на 90%, а урон от болезней - на 70%.</li>
+                        <li><img src="SSS/spell_shadow_felmending.jpg" alt="spell_shadow_felmending" width="16px"> <b>Запах крови</b> - Саурфанг баффает Кровавых чудовищ, заставляя их уменьшать скорость передвижения всех игроков на 80% и увеличивать наносимый чудовищами урон на 300%. Длится 10 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_bloodtap.jpg" alt="spell_deathknight_bloodtap" width="16px"> <b>Узы крови</b> - Накладывает один стак <img src="SSS/spell_deathknight_bloodpresence.jpg" alt="spell_deathknight_bloodpresence" width="16px"> <b>Сила крови</b> каждый раз когда Кровавые чудовища наносят удар. Увеличивает энергию босса на 1.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="5"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-festergut.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">9,412,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                          13,700,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                          40,440,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                          52,200,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  5 минут <p></p>'>
+            Тухлопуз
+        </h2>
+        <p align="justify">Тухлопуз считается самым легким боссом Чумодельни. В начале боя комната заполнена Гнилостными испарениями, тикающими по всему рейду. Периодически босс вдыхает испарения и увеличивает скорость атаки и наносимый урон на 30% за вдох. При каждом вдохе, АОЕ, тикающее по рейду ослабевает. Когда босс набирает 3 стака баффа Гнилостные испарения в легких, он выдыхает газ обратно в комнату нанося всему рейду огромный урон.
+            <br><br>Пережить урон от выдыхания газа вам поможет другая способность босса - Газообразные споры. Когда на игрока прилетает спора, всем нужно подбежать к нему, чтобы получить стак баффа Невосприимчивость к гнили. За каждый стак, вы получите 25% уменьшение урона от темной магии, что позволит вам пережить выдох газа. Время от времени на некоторых игроков будет бросаться Губительный газ, из которого нужно выходить.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+            <ul>
+        <li>Во время боя с Тухлопузом, Професор мерзоцид раскидывается <img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкой гадостью</b> c балкона.</li>
+    </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_5">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5_10N" aria-controls="collapseThree" onclick="toggle5Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5_10H" aria-controls="collapseThree" onclick="toggle5Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5_25N" aria-controls="collapseThree" onclick="toggle5NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5_25H" aria-controls="collapseThree" onclick="toggle5HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse5_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Тухлопуз</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [3/3]</b> - Газовое облако наносит всем 4 388 - 4 612 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [2/3]</b> - Газовое облако наносит всем 2 925 - 3 075 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [1/3]</b> - Газовое облако наносит всем 1 950 – 2 050 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [0/3]</b> - Газовое облако наносит всем 1 463 - 1 537 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Газовые споры</b> - Выпускает газовые споры, заражая 2 (3 в 25-ке) случайные цели. Спора взрывается через 12 секунд, нанося 1 950 - 2 050 урона от темной магии всем в радиусе 8 ярдов от споры. Урон от споры создает у цели стакающийся иммунитет (<img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Невосприимчивость к гнили</b>) уменьшая урон от темной магии на 25% на 2 минуты.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Вдыхание гнилостных испарений</b> - Вдыхает облако гнили, увеличивая при этом свой урон и скорость атаки на 25%.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Газовое вздутие</b> - Наносит 9 750 - 10 250 урона от сил природы своей цели, повышая наносимый ею урон на 10% на 100 секунд. При 10-кратном суммировании вызывает желудочный взрыв немедленно убивая игрока и нанося всем в радиусе 10 ярдов 29 250 - 30 750 урона от темной магии.</li>
+                        <li><img src="SSS/spell_shadow_abominationexplosion.jpg" alt="spell_shadow_abominationexplosion" width="16px"> <b>Едкая гниль</b> - Выпускает <img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения</b> обратно в комнату, нанося  48 750 - 51 250 урона от темной магии всем вокруг. Время применения - 3 секунды.</li>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse5_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Тухлопуз</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [3/3]</b> - Газовое облако наносит всем 4 388 - 4 612 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [2/3]</b> - Газовое облако наносит всем 2 925 - 3 075 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [1/3]</b> - Газовое облако наносит всем 1 950 – 2 050 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [0/3]</b> - Газовое облако наносит всем 1 463 - 1 537 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Газовые споры</b> - Выпускает газовые споры, заражая 2 (3 в 25-ке) случайные цели. Спора взрывается через 12 секунд, нанося 1 950 - 2 050 урона от темной магии всем в радиусе 8 ярдов от споры. Урон от споры создает у цели стакающийся иммунитет (<img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Невосприимчивость к гнили</b>) уменьшая урон от темной магии на 25% на 2 минуты.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Вдыхание гнилостных испарений</b> - Вдыхает облако гнили, увеличивая при этом свой урон и скорость атаки на 25%.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Газовое вздутие</b> - Наносит 9 750 - 10 250 урона от сил природы своей цели, повышая наносимый ею урон на 10% на 100 секунд. При 10-кратном суммировании вызывает желудочный взрыв немедленно убивая игрока и нанося всем в радиусе 10 ярдов 29 250 - 30 750 урона от темной магии.</li>
+                        <li><img src="SSS/spell_shadow_abominationexplosion.jpg" alt="spell_shadow_abominationexplosion" width="16px"> <b>Едкая гниль</b> - Выпускает <img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения</b> обратно в комнату, нанося  48 750 - 51 250 урона от темной магии всем вокруг. Время применения - 3 секунды.</li>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам. </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Професор мерзоцид</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 250% на 15 секунд. Место падения обозначается зеленой лужей на полу.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse5_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Тухлопуз</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [3/3]</b> - Газовое облако наносит всем 4 388 - 4 612 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [2/3]</b> - Газовое облако наносит всем 2 925 - 3 075 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [1/3]</b> - Газовое облако наносит всем 1 950 – 2 050 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [0/3]</b> - Газовое облако наносит всем 1 463 - 1 537 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Газовые споры</b> - Выпускает газовые споры, заражая 2 (3 в 25-ке) случайные цели. Спора взрывается через 12 секунд, нанося 1 950 - 2 050 урона от темной магии раз в 1 секунду, в течение 6 секунд, в радиусе 8 ярдов от споры. Урон от споры создает у цели стакающийся иммунитет (<img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Невосприимчивость к гнили</b>) уменьшая урон от темной магии на 25% на 2 минуты.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Вдыхание гнилостных испарений</b> - Вдыхает облако гнили, увеличивая при этом свой урон и скорость атаки на 30%.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Газовое вздутие</b> - Наносит 14625 – 15375 урона от сил природы своей цели, повышая наносимый ею урон на 10% на 100 секунд. При 10-кратном суммировании вызывает желудочный взрыв немедленно убивая игрока и нанося всем в радиусе 10 ярдов 29 250 - 30 750 урона от темной магии.</li>
+                        <li><img src="SSS/spell_shadow_abominationexplosion.jpg" alt="spell_shadow_abominationexplosion" width="16px"> <b>Едкая гниль</b> - Выпускает <img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения</b> обратно в комнату, нанося  48 750 - 51 250 урона от темной магии всем вокруг. Время применения - 3 секунды.</li>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse5_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Тухлопуз</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [3/3]</b> - Газовое облако наносит всем 4 388 - 4 612 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [2/3]</b> - Газовое облако наносит всем 2 925 - 3 075 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [1/3]</b> - Газовое облако наносит всем 1 950 – 2 050 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения [0/3]</b> - Газовое облако наносит всем 1 463 - 1 537 урона от темной магии раз в 2 секунды.</li>
+                        <li><img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Газовые споры</b> - Выпускает газовые споры, заражая 2 (3 в 25-ке) случайные цели. Спора взрывается через 12 секунд, нанося 1 950 - 2 050 урона от темной магии раз в 1 секунду, в течение 6 секунд, в радиусе 8 ярдов от споры. Урон от споры создает у цели стакающийся иммунитет (<img src="SSS/spell_shadow_creepingplague.jpg" alt="spell_shadow_creepingplague" width="16px"> <b>Невосприимчивость к гнили</b>) уменьшая урон от темной магии на 25% на 2 минуты.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Вдыхание гнилостных испарений</b> - Вдыхает облако гнили, увеличивая при этом свой урон и скорость атаки на 30%.</li>
+                        <li><img src="SSS/achievement_boss_festergutrotface.jpg" alt="achievement_boss_festergutrotface" width="16px"> <b>Газовое вздутие</b> - Наносит 14625 – 15375 урона от сил природы своей цели, повышая наносимый ею урон на 10% на 100 секунд. При 10-кратном суммировании вызывает желудочный взрыв немедленно убивая игрока и нанося всем в радиусе 10 ярдов 29 250 - 30 750 урона от темной магии.</li>
+                        <li><img src="SSS/spell_shadow_abominationexplosion.jpg" alt="spell_shadow_abominationexplosion" width="16px"> <b>Едкая гниль</b> - Выпускает <img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Гнилостные испарения</b> обратно в комнату, нанося  48 750 - 51 250 урона от темной магии всем вокруг. Время применения - 3 секунды.</li>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам. </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Професор мерзоцид</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 250% на 15 секунд. Место падения обозначается зеленой лужей на полу.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="6"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-rotface.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">7,320,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  10,458,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  36,257,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  47,413,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  5 минут <p></p>'>
+            Гниломорд
+        </h2>
+        <p align="justify">Гниломорд как и его брат Тухлопуз ожидают рейд на пути к Професору Мерзоциду. Не смотря на маленькое количество способностей босса, он доставляет немало неприятностей рейду, особенно в героическом режиме сложности. В бою палаты гниломорда заполняются жидкой слизью, что заставляет кастеров танка сильно тесниться и искать себе место на поле боя. Гниломорд переодически поливает слизью зону перед собой, чтобы избежать урона необходимо весь бой стоять за спиной у босса.
+            <br><br>Босс заражает случайного игрока Мутировавшей инфекцией, сильно угрожая его жизни. Хилеры должны исцелять зараженную цель, бросив максимум усилий, чтобы уберечь игрока от смерти. После окончания времени действия инфекции или снятия болезни на месте инфицированого спавнится Маленький слизнюк. Маленький слизнюк невосприимчив к таунту и будет плевать лужами слизи под свою цель. Слизнюк обладает лучащейся аурой, которая наносит переодический урон всем вокруг раз в 2 секунды.
+            <br><br>Если свести вместе два Маленьких слизнюка на их месте появится Большой слизнюк. Большой слизнюк обладает теми же способностями что и маленькие, помимо пасивной Неустойчивости нестабильного слизнюка [2/10] которая увеличивает любой урон слизнюка на 20% за стак. Сводя маленьких слизнюков к большому — игроки уменьшают урон по рейду, и увеличивают количество стаков Неустойчивости нестабильного слизнюка. Если Большой слизнюк наберёт 5 стаков — он взорвется, раскидав много зарядов слизи на головы игрокам, от которых легко убежать. Игроки часто допускают ошибку и паникуют на взрыве слизня. Не нужно паниковать, лучше используйте защитные кд и найдите безопасную зону (где не стояли игроки в момент взрыва).
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+            <ul>
+                <li>Во время боя с Гниломордом, Професор мерзоцид поражает случайных игроков <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительным газом</b> с балкона.<br>Если достаточно (~ 8) игроков стоят далеко от Гниломорда, то Губительный газ не поражает мили зону. Это очень важно чтобы кастеры не заходили в мили зону когда уклоняются от <img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкой слизи</b>.</li>
+                <li><img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> - Снижает еффективность получаемого исцеления на 75% вместо 50%. Это очень сильно влияет на количество требуемого исцеления по цели.</li>
+                <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкая слизь</b> - замедляет скорость передвижения на 10% каждую секунду. Стакается (10 максимум). Время действия: 5 секунд.</li>
+            </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_6">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6_10N" aria-controls="collapseThree" onclick="toggle6Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6_10H" aria-controls="collapseThree" onclick="toggle6Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6_25N" aria-controls="collapseThree" onclick="toggle6NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6_25H" aria-controls="collapseThree" onclick="toggle6HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse6_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Гниломорд</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_slime_01.jpg" alt="inv_misc_slime_01" width="16px"> <b>Брызги слизи</b> - Поливает зеленой слизью нанося 5 363 - 5 637 урона от сил природы всем врагам конусе перед собой каждую секунду в течение 5 секунд.</li>
+                        <li><img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> - Наносит 3 900 - 4 100 урона от темной магии природы каждую секунду и снижает еффективность получаемого исцеления на 50%. Если вылечить инфекцию, на месте цели появится маленький слизнюк.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкая слизь</b> - Отличные новости, народ! Слизь снова потекла! С одного из четырёх клапанов палат Гниломорда выливается лужа слизи и заполняет 1/4 комнаты. Наносит 5 363 - 5 637 урона каждую секунду и замедляет скорость передвижения на 25% на 5 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Маленький слизнюк</b></h5>
+                    <ul>
+                        Слизень спавнится когда <img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> снимается с участника рейда.
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Слабое излучение</b> - Наносит 3 413 - 3 587 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Большой слизнюк</b></h5>
+                    <ul>
+                        Результат обьединения двух маленьких слизней
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Излучение</b> -  Наносит 4 388 - 4 612 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> - Увеличивает наносимый урон на 20%. Стакается (Максимум 10). Накладывается каждый раз когда слизень соединяется с Большим слизнюком.</li>
+                        </ul>
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/ability_creature_poison_06.jpg" alt="ability_creature_poison_06" width="16px"> <b>Взрыв нестабильного слизнюка</b> - Когда <img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> достигает 5 стаков, Большой слизнюк взрывается (Время применения: 4 секунды). Слизнюк выпускает большое количество зарядов слизи на головы игрокам. Заряд наносит 9 750 - 10 250 урона в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse6_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Гниломорд</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_slime_01.jpg" alt="inv_misc_slime_01" width="16px"> <b>Брызги слизи</b> - Поливает зеленой слизью нанося 5 363 - 5 637 урона от сил природы всем врагам конусе перед собой каждую секунду в течение 5 секунд.</li>
+                        <li><img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> - Наносит 3 900 - 4 100 урона от темной магии природы каждую секунду и снижает еффективность получаемого исцеления на 50%. Если вылечить инфекцию, на месте цели появится маленький слизнюк.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкая слизь</b> - Отличные новости, народ! Слизь снова потекла! С одного из четырёх клапанов палат Гниломорда выливается лужа слизи и заполняет 1/4 комнаты. Наносит 5 363 - 5 637 урона каждую секунду и замедляет скорость передвижения на 25% на 5 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Маленький слизнюк</b></h5>
+                    <ul>
+                        Слизень спавнится когда <img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> снимается с участника рейда.
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Слабое излучение</b> - Наносит 3 413 - 3 587 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Большой слизнюк</b></h5>
+                    <ul>
+                        Результат обьединения двух маленьких слизней
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Излучение</b> -  Наносит 4 388 - 4 612 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> - Увеличивает наносимый урон на 20%. Стакается (Максимум 10). Накладывается каждый раз когда слизень соединяется с Большим слизнюком.</li>
+                        </ul>
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/ability_creature_poison_06.jpg" alt="ability_creature_poison_06" width="16px"> <b>Взрыв нестабильного слизнюка</b> - Когда <img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> достигает 5 стаков, Большой слизнюк взрывается (Время применения: 4 секунды). Слизнюк выпускает большое количество зарядов слизи на головы игрокам. Заряд наносит 9 750 - 10 250 урона в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Професор мерзоцид</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse6_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Гниломорд</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_slime_01.jpg" alt="inv_misc_slime_01" width="16px"> <b>Брызги слизи</b> - Поливает зеленой слизью нанося 5 363 - 5 637 урона от сил природы всем врагам конусе перед собой каждую секунду в течение 5 секунд.</li>
+                        <li><img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> - Наносит 3 900 - 4 100 урона от темной магии природы каждую секунду и снижает еффективность получаемого исцеления на 50%. Если вылечить инфекцию, на месте цели появится маленький слизнюк.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкая слизь</b> - Отличные новости, народ! Слизь снова потекла! С одного из четырёх клапанов палат Гниломорда выливается лужа слизи и заполняет 1/4 комнаты. Наносит 5 363 - 5 637 урона каждую секунду и замедляет скорость передвижения на 25% на 5 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Маленький слизнюк</b></h5>
+                    <ul>
+                        Слизень спавнится когда <img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> снимается с участника рейда.
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Слабое излучение</b> - Наносит 3 413 - 3 587 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Большой слизнюк</b></h5>
+                    <ul>
+                        Результат обьединения двух маленьких слизней
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Излучение</b> -  Наносит 4 388 - 4 612 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> - Увеличивает наносимый урон на 20%. Стакается (Максимум 10). Накладывается каждый раз когда слизень соединяется с Большим слизнюком.</li>
+                        </ul>
+                        <li><img src="SSS/ability_creature_poison_06.jpg" alt="ability_creature_poison_06" width="16px"> <b>Взрыв нестабильного слизнюка</b> - Когда <img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> достигает 5 стаков, Большой слизнюк взрывается (Время применения: 4 секунды). Слизнюк выпускает большое количество зарядов слизи на головы игрокам. Заряд наносит 9 750 - 10 250 урона в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse6_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Гниломорд</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_misc_slime_01.jpg" alt="inv_misc_slime_01" width="16px"> <b>Брызги слизи</b> - Поливает зеленой слизью нанося 5 363 - 5 637 урона от сил природы всем врагам конусе перед собой каждую секунду в течение 5 секунд.</li>
+                        <li><img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> - Наносит 3 900 - 4 100 урона от темной магии природы каждую секунду и снижает еффективность получаемого исцеления на 50%. Если вылечить инфекцию, на месте цели появится маленький слизнюк.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Жидкая слизь</b> - Отличные новости, народ! Слизь снова потекла! С одного из четырёх клапанов палат Гниломорда выливается лужа слизи и заполняет 1/4 комнаты. Наносит 5 363 - 5 637 урона каждую секунду и замедляет скорость передвижения на 25% на 5 секунд.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Маленький слизнюк</b></h5>
+                    <ul>
+                        Слизень спавнится когда <img src="SSS/ability_creature_disease_02.jpg" alt="ability_creature_disease_02" width="16px"> <b>Мутировавшая инфекция</b> снимается с участника рейда.
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Слабое излучение</b> - Наносит 3 413 - 3 587 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Большой слизнюк</b></h5>
+                    <ul>
+                        Результат обьединения двух маленьких слизней
+                        <li><img src="SSS/spell_shadow_plaguecloud.jpg" alt="spell_shadow_plaguecloud" width="16px"> <b>Липкая слизь</b> - Маленький слизень плюет рядом с целью разливая маленькую лужу слизи. Лужа наносит 2 925 - 3 075 урона каждую секунду и замедляет скорость передвижения на 50%.</li>
+                        <li><img src="SSS/spell_fire_felcano.jpg" alt="spell_fire_felcano" width="16px"> <b>Излучение</b> -  Наносит 4 388 - 4 612 урона раз в 2 секунды всем врагам в радиусе 10 ярдов.</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> - Увеличивает наносимый урон на 20%. Стакается (Максимум 10). Накладывается каждый раз когда слизень соединяется с Большим слизнюком.</li>
+                        </ul>
+                        <li><img src="SSS/ability_creature_poison_06.jpg" alt="ability_creature_poison_06" width="16px"> <b>Взрыв нестабильного слизнюка</b> - Когда <img src="SSS/spell_shadow_unstableaffliction_2.jpg" alt="spell_shadow_unstableaffliction_2" width="16px"> <b>Неустойчивость нестабильного слизнюка</b> достигает 5 стаков, Большой слизнюк взрывается (Время применения: 4 секунды). Слизнюк выпускает большое количество зарядов слизи на головы игрокам. Заряд наносит 9 750 - 10 250 урона в радиусе 10 ярдов.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Професор мерзоцид</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Губительный газ</b> - Поражает выбранную область губительной чумой, наносящей 4875 – 5125 ед. урона раз в 2 секунды, в течение 6 секунд. Зараженные цели страдают рвотой, нанося 3900 – 4100 ед. урона ближайшим союзникам.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="7"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-professor-putricide.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">9,761,500 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  13,670,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  42,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  50,200,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  10 минут <p></p>'>
+            Профессор Мерзоцид
+        </h2>
+        <p align="justify">Чтобы пройти к Профессору, нужно открыть вентили в залах Тухлопуза и Гниломорда после их убийства - слизь пойдет по трубам, откроются центральные ворота к лаборатории Профессора. Битва с Професором требует много DPS и передвижения.
+            <br><br><b>[Фаза 1]</b> Эта фаза состоит из контроля над уроном. По очереди, Професор призывает зеленого и красного слизня, а также переодически сбрасывает колбы со слизью на головы случайным игрокам. Рейду необходимо оперативно менять цель и контролировать повреждения чтобы вовремя перевести босса. Успешной переходная фаза считается тогда, когда на поле боя нет живых слизней.
+            <br><br><b>[Фаза 2]</b> В добавок к слизням и лужам слизи игроков ждет немного больше опасностей. Босс разбрасывается вязкой гадостью в игроков, и оставляет за собой химические бомбы. Игрокам следует избегать урона от этих способностей если они не хотят потерять свою эфективность в бою с Професором. Вязкая гадость выглядит как прыгающий шар зеленой слизи и попав под неё игроки теряют скорость атаки и чтения заклинаний. Химические бомбы представляют из себя колбы с оранжевым удушающим газом, пробежав слишком близко к колбе игроки рискуют попасть под действие удушающего газа, что очень сильно снижает вероятность попасть по цели.
+            <br><br><b>[Фаза 3]</b> Завершающая схватка с Мерзоцидом после того как он выпивает все свои зелья. Босс больше не призывает слизней, но все еще разбрасывается вязкой гадостью и колбами со слизью, а также продолжает оставлять за собой химические бомбы. Урон наносимый боссом и скорость атаки в ближнем бою увеличены. Раз в 10 секунд босс заражает свою цель стаком чумы которая наносит урон всему рейду. Фаза требует большой DPS так, как у игроков будет мало времени из-за постоянно стакающейся чумы. Чтобы по рейду проходило как можно меньше урона игрокам нужно стараться ловить чуму на разных игроков не стакая её на одних и тех же целях.
+            <br><br><p><span style="color:#8B0000">Героический режим</span></p><br>
+        <ul>
+            <li>Битва с профессором в героическом режиме требует безупречного контроля над уроном.</li>
+        </ul>
+        </p>
+        <h3>Способности</h3>
+        <div class="card">
+            <div class="card-header" id="headingThree_7">
+                <h5 class="mb-0" >
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7_10N" aria-controls="collapseThree" onclick="toggle7Nfunction();" aria-expanded="false" id ="button">
+                        10 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7_10H" aria-controls="collapseThree" onclick="toggle7Hfunction();" aria-expanded="false" id="button">
+                        10 хм
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7_25N" aria-controls="collapseThree" onclick="toggle7NNfunction();" aria-expanded="false" id="button">
+                        25 об
+                    </button>
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7_25H" aria-controls="collapseThree" onclick="toggle7HHfunction();" aria-expanded="false" id="button">
+                        25 хм
+                    </button>
+                </h5>
+            </div>
+            <div id="collapse7_10N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1 [100% — 80%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - [Время применения: 2,5 секунды] Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2 [80% — 35%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Создание варева</b> - [Время применения: 4 секунды]</li>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 3 [35% — 0%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Поглощение зелий</b> - [Время применения: 4 секунды]</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unholystrength.jpg" alt="spell_shadow_unholystrength" width="16px"> <b>Сила мутанта</b> - Увеличивает наносимый урон и скорость атаки на 50%. При атаке мутация прогрессирует, нанося заклинателю увеличивающийся урон раз в 3 секунды.</li>
+                        </ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                        <li><img src="SSS/ability_rogue_deviouspoisons.jpg" alt="ability_rogue_deviouspoisons" width="16px"> <b>Мутировавшая чума</b> - Профессор Мерзоцид инфицирует свою цель раз в 10 секунд стаком Мутировавшей чумы. Наносит 400 урона от темной магии природы всему рейду раз в 3 секунды. Каждый стак увеличивает урон от чумы в геометрической прогрессии.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Неустойчивый слизнюк</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warlock_chaosbolt.jpg" alt="ability_warlock_chaosbolt" width="16px"> <b>Выделения неустойчивого слизнюка</b> - [Время применения: 3 секунды] Липкие выделения приковывают цель к месту, нанося 4 388 - 4 612 урона раз в секунду. К цели начинает двигатся неустойчивый слизнюк и, добравшись до нее, взрывается, нанося 68 250 - 71 750 урона. Урон делится между всеми находящимися рядом целями.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Облако газа</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Газовое вздутие</b> - [Время применения: 3 секунды] Наносит 12190 - 12810 урона раз в 2 сек. С каждым тактом урон уменьшается на 10%. К цели начинает двигатся облако газа и, добравшись до нее, взрывается, убивая всех игроков.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Мутировавшее поганище</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Сьесть слизнюка</b> - Сьесть мутировавшую слизь, уменьшив размер лужи и получив 4 единицы енергии.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Рвотный слизнюк</b> - Ошеломляет противника, снижая его скорость передвижения на 50% и нанося 6 338 - 6 662 урона раз в 2 секунды, в течение 20 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_thrash_ghoul.jpg" alt="spell_deathknight_thrash_ghoul" width="16px"> <b>Взмах мутанта</b> - Мгновенно наносит цели 100% урона от оружия и снижает сопротивляемость цели физическому урону на 4% на 20 секунд. Еффекст суммируется до 5 раз.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse7_10H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1 [100% — 80%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - [Время применения: 2,5 секунды] Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2 [80% — 35%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Создание варева</b> - [Время применения: 20 секунд]</li>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 3 [35% — 0%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Поглощение зелий</b> - [Время применения: 20 секунд]</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unholystrength.jpg" alt="spell_shadow_unholystrength" width="16px"> <b>Сила мутанта</b> - Увеличивает наносимый урон и скорость атаки на 50%. При атаке мутация прогрессирует, нанося заклинателю увеличивающийся урон раз в 3 секунды.</li>
+                        </ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                        <li><img src="SSS/ability_rogue_deviouspoisons.jpg" alt="ability_rogue_deviouspoisons" width="16px"> <b>Мутировавшая чума</b> - Профессор Мерзоцид инфицирует свою цель раз в 10 секунд стаком Мутировавшей чумы. Наносит 400 урона от темной магии природы всему рейду раз в 3 секунды. Каждый стак увеличивает урон от чумы в геометрической прогрессии.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Неустойчивый слизнюк</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warlock_chaosbolt.jpg" alt="ability_warlock_chaosbolt" width="16px"> <b>Выделения неустойчивого слизнюка</b> - [Время применения: 3 секунды] Липкие выделения приковывают цель к месту, нанося 4 388 - 4 612 урона раз в секунду. К цели начинает двигатся неустойчивый слизнюк и, добравшись до нее, взрывается, нанося 68 250 - 71 750 урона. Урон делится между всеми находящимися рядом целями.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Облако газа</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Газовое вздутие</b> - [Время применения: 3 секунды] Наносит 12190 - 12810 урона раз в 2 сек. С каждым тактом урон уменьшается на 10%. К цели начинает двигатся облако газа и, добравшись до нее, взрывается, убивая всех игроков.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Мутировавшее поганище</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Сьесть слизнюка</b> - Сьесть мутировавшую слизь, уменьшив размер лужи и получив 4 единицы енергии.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Рвотный слизнюк</b> - Ошеломляет противника, снижая его скорость передвижения на 50% и нанося 6 338 - 6 662 урона раз в 2 секунды, в течение 20 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_thrash_ghoul.jpg" alt="spell_deathknight_thrash_ghoul" width="16px"> <b>Взмах мутанта</b> - Мгновенно наносит цели 100% урона от оружия и снижает сопротивляемость цели физическому урону на 4% на 20 секунд. Еффекст суммируется до 5 раз.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse7_25N" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1 [100% — 80%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - [Время применения: 2,5 секунды] Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2 [80% — 35%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Создание варева</b> - [Время применения: 4 секунды]</li>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 3 [35% — 0%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Поглощение зелий</b> - [Время применения: 4 секунды]</li>
+                        <ul>
+                            <li><img src="SSS/spell_shadow_unholystrength.jpg" alt="spell_shadow_unholystrength" width="16px"> <b>Сила мутанта</b> - Увеличивает наносимый урон и скорость атаки на 50%. При атаке мутация прогрессирует, нанося заклинателю увеличивающийся урон раз в 3 секунды.</li>
+                        </ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                        <li><img src="SSS/ability_rogue_deviouspoisons.jpg" alt="ability_rogue_deviouspoisons" width="16px"> <b>Мутировавшая чума</b> - Профессор Мерзоцид инфицирует свою цель раз в 10 секунд стаком Мутировавшей чумы. Наносит 400 урона от темной магии природы всему рейду раз в 3 секунды. Каждый стак увеличивает урон от чумы в геометрической прогрессии.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Неустойчивый слизнюк</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warlock_chaosbolt.jpg" alt="ability_warlock_chaosbolt" width="16px"> <b>Выделения неустойчивого слизнюка</b> - [Время применения: 3 секунды] Липкие выделения приковывают цель к месту, нанося 4 388 - 4 612 урона раз в секунду. К цели начинает двигатся неустойчивый слизнюк и, добравшись до нее, взрывается, нанося 165 750 - 174 250 урона урона. Урон делится между всеми находящимися рядом целями.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Облако газа</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Газовое вздутие</b> - [Время применения: 3 секунды] Наносит 12190 - 12810 урона раз в 2 сек. С каждым тактом урон уменьшается на 10%. К цели начинает двигатся облако газа и, добравшись до нее, взрывается, убивая всех игроков.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Мутировавшее поганище</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Сьесть слизнюка</b> - Сьесть мутировавшую слизь, уменьшив размер лужи и получив 4 единицы енергии.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Рвотный слизнюк</b> - Ошеломляет противника, снижая его скорость передвижения на 50% и нанося 6 338 - 6 662 урона раз в 2 секунды, в течение 20 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_thrash_ghoul.jpg" alt="spell_deathknight_thrash_ghoul" width="16px"> <b>Взмах мутанта</b> - Мгновенно наносит цели 100% урона от оружия и снижает сопротивляемость цели физическому урону на 4% на 20 секунд. Еффекст суммируется до 5 раз.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="collapse7_25H" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" aria-expanded="true" style="height: 0;">
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Фаза 1 [100% — 80%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - [Время применения: 2,5 секунды] Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 2 [80% — 35%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Слезоточивый газ</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Создание варева</b> - [Время применения: 20 секунд]</li>
+                        <li><img src="SSS/spell_shadow_unstableaffliction_1.jpg" alt="spell_shadow_unstableaffliction_1" width="16px"> <b>Непредсказуемый эксперимент</b> - Профессор проводит над вами всеми эксперимент. С одной из двух гигантских колб в лаборатории Мерзоцида появляется мутировавший слизень соответствующего цвета.</li>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                    </ul>
+                    <h5 class="phase_2"><b>Фаза 3 [35% — 0%]</b></h5>
+                    <ul>
+                        <li><img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Неустойчивая переменная</b> — <img src="SSS/inv_inscription_inkorange01.jpg" alt="inv_inscription_inkorange01" width="16px"> <b>Газовая переменная</b> — <img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Поглощение зелий</b> - [Время применения: 20 секунд]</li>
+                        <ul>
+                            <li><img src="SSS/inv_inscription_inkgreen03.jpg" alt="inv_inscription_inkgreen03" width="16px"> <b>Неустойчивая переменная</b> - Вы способны навредить только Неустойчивому слизнюку.</li>
+                            <li><img src="SSS/inv_inscription_inkorange01.jpg" alt="inv_inscription_inkorange01" width="16px"> <b>Газовая переменная</b> - Вы способны навредить только Облаку газа.</li>
+                            <li><img src="SSS/spell_shadow_unholystrength.jpg" alt="spell_shadow_unholystrength" width="16px"> <b>Сила мутанта</b> - Увеличивает наносимый урон и скорость атаки на 50%. При атаке мутация прогрессирует, нанося заклинателю увеличивающийся урон раз в 3 секунды.</li>
+                        </ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Лужа слизи</b> - Бросок двух флаконов мутировавшей слизи в случайных игроков. После приземления флакона образуется лужа слизи, которая наносит 2 925 - 3 075 урона раз в секунду</li>
+                        <li><img src="SSS/spell_shadow_mindbomb.jpg" alt="spell_shadow_mindbomb" width="16px"> <b>Химическая бомба</b> - Профессор Мерзоцид разбрасывает вокруг себя колбы удушающего газа, наносящие 5 363 - 5 637 урона раз в секунду. Через 20 секунд колбы врзрываются, нанося 15 600 - 16 400 урона. Игроки попавшие в радиус взрыва получают дебаф <img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b>.</li>
+                        <ul>
+                            <li><img src="SSS/ability_creature_cursed_01.jpg" alt="ability_creature_cursed_01" width="16px"> <b>Удушающий газ</b> - Уменьшает вероятность попадания атаками и заклинаниями на 75% на 10 секунд.</li>
+                        </ul>
+                        <li><img src="SSS/inv_misc_herb_evergreenmoss.jpg" alt="inv_misc_herb_evergreenmoss" width="16px"> <b>Вязкая гадость</b> - Наносит 14 625 - 15 375 урона от сил природы в радиусе 8 ярдов и замедляя скорость атаки и применения заклинаний на 200% на 15 секунд.</li>
+                        <li><img src="SSS/ability_rogue_deviouspoisons.jpg" alt="ability_rogue_deviouspoisons" width="16px"> <b>Мутировавшая чума</b> - Профессор Мерзоцид инфицирует свою цель раз в 10 секунд стаком Мутировавшей чумы. Наносит 400 урона от темной магии природы всему рейду раз в 3 секунды. Каждый стак увеличивает урон от чумы в геометрической прогрессии.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Неустойчивый слизнюк</b></h5>
+                    <ul>
+                        <li><img src="SSS/ability_warlock_chaosbolt.jpg" alt="ability_warlock_chaosbolt" width="16px"> <b>Выделения неустойчивого слизнюка</b> - [Время применения: 3 секунды] Липкие выделения приковывают цель к месту, нанося 4 388 - 4 612 урона раз в секунду. К цели начинает двигатся неустойчивый слизнюк и, добравшись до нее, взрывается, нанося 165 750 - 174 250 урона. Урон делится между всеми находящимися рядом целями.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Облако газа</b></h5>
+                    <ul>
+                        <li><img src="SSS/Spell_holiday_tow_spicecloud.png" alt="Spell_holiday_tow_spicecloud" width="16px"> <b>Газовое вздутие</b> - [Время применения: 3 секунды] Наносит 12190 - 12810 урона раз в 2 сек. С каждым тактом урон уменьшается на 10%. К цели начинает двигатся облако газа и, добравшись до нее, взрывается, убивая всех игроков.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="phase_1"><b>Мутировавшее поганище</b></h5>
+                    <ul>
+                        <li><img src="SSS/spell_fire_felflamebreath.jpg" alt="spell_fire_felflamebreath" width="16px"> <b>Сьесть слизнюка</b> - Сьесть мутировавшую слизь, уменьшив размер лужи и получив 4 единицы енергии.</li>
+                        <li><img src="SSS/ability_creature_poison_02.jpg" alt="ability_creature_poison_02" width="16px"> <b>Рвотный слизнюк</b> - Ошеломляет противника, снижая его скорость передвижения на 50% и нанося 6 338 - 6 662 урона раз в 2 секунды, в течение 20 секунд.</li>
+                        <li><img src="SSS/spell_deathknight_thrash_ghoul.jpg" alt="spell_deathknight_thrash_ghoul" width="16px"> <b>Взмах мутанта</b> - Мгновенно наносит цели 100% урона от оружия и снижает сопротивляемость цели физическому урону на 4% на 20 секунд. Еффекст суммируется до 5 раз.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><hr>
+        <p><a name="8"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-blood-prince-council.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">3,000,000/3,300,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  6,000,000/3,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  13,400,000/11,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  26,800,000/13,900,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  10 минут <p></p>'>
+            Совет принцев крови
+        </h2>
+        <p align="justify">Кровавый совет состоит из трех принцев. Он считается довольно таки легким боссом цитадели ледяной короны.
+            <br><br> Во время боя принцы используют свои сильнейшие заклинания по очереди, по этому игроки справляются с ними без особого труда. Рейду предстоит переключаться между принцами нанося урон тому кто сражается с игроками в полную силу.
+            <br><br> <b>Принц Валанар</b>. Наверное самый опасный из принцев для неподготовленого рейда, так как переодически кастует заклинание Могучий вихрь которое применяется к каждому игроку и наносит огромный урон откидывая находящихся слишком близко друг к другу игроков. Чтобы успешно пережить Могучий вихрь кастерам нужно зарание набрать дистанцию друг от друга, а мили дамагерам вовремя реагировать на каст и разбегаться в поисках свободного пространства.
+            <br><br> <b>Принц Талдарам.</b>
+            <br><br> <b>Принц Келесет.</b>
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+        </p>
+
+        <p><a name="9"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-blood-queen-lanathel.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">3,000,000/3,300,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  6,000,000/3,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  13,400,000/11,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  26,800,000/13,900,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  10 минут <p></p>'>
+            Кровавая королева Лана'Тель
+        </h2>
+        <p align="justify">
+            <br><br>
+            <br><br>
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+        </p>
+
+        <p><a name="10"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="SSS/ui-ej-boss-valithria-dreamwalker.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">6,000,000/12,300,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  6,000,000/12,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  16,000,000/32,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  16,000,000/32,000,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  Отсутствует <p></p>'>
+            Валитрия Сноходица
+        </h2>
+        <p align="justify">Валитрия считается одним из самых простых боссов Цитадели Ледяной Короны.
+            <br><br>Валитрия Сноходица дружественный для рейда босс который заточен в Ледяных залах. Чтобы пройти этот энкаунтер хилерам нужно будет излечить босса до 100% его жизней. С начала боя у Валитрии половина здоровья. Ледяные залы заполоняют толпы существ нежити, и пока хилеры исцеляют Валитрию Сноходицу, всем остальным прийдется отбиваться от нежити и защищать босса и хилеров. Валитрия будет пытаться помочь рейду вызывая порталы в изумрудный сон, где игроки смогут получить преимущество в бою, собирая стаки с находящихся в воздухе эссенций. Пока рейд сражается хилеры должны исцелять Валитрию, и собирать стаки, летая в изумрудном сне.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+        </p>
+
+        <p><a name="11"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><img src="img src="SSS/ui-ej-boss-sindragosa.png" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">11,156,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  13,950,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  38,348,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  45,950,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  9 минут <p></p>'>
+            Синдрагоса
+        </h2>
+        <p align="justify">После того как рейд убивает Инея и Хребтохруста на балкон ледяных залов прилетает Синдрагоса, обрушая на игроков ледяные бомбы. После чего сразу же приземляется и атакует игроков.
+            <br><br><b>[Фаза 1]</b> Первая фаза не очень сложная. Синдрагоса как и все драконы переодически атакует дыханием. А также атакует хвостом тех, кто стоит за её спиной. Поэтому рейду стоит разместиться под одним из крыльев босса - сбоку. Полностью избежать удары хвостом очень просто, а вот ледяного дыхания рейду не избежать. Держа Синдрагосу боком к рейду танку приходиться принимать урон от ледяного дыхания на себя. Ледяное дыхание очень опасная способность которая наносит огромный урон в конусе перед боссом. Чтобы успешно переживать урон от магии льда танкам приходиться менять экипировку на фрост резист.
+            Атакуя Синдрагосу в ближнем бою игроки получают стак Обморожения которое наносит переодический урон.
+            Периодически Синдрагоса набрасывает на кастеров и хилеров Освобожденную магию.
+            Также Синдрагоса применяет заклинание Обжигающий холод, притягивая весь рейд к себе в начале каста, и взрываясь нанося огромный урон от магии льда всем вокруг в конце.
+            <br><br><b>Воздушная фаза</b>. Синдрагоса взмывает в воздух оставляя на нескольких игроках Ледяные метки
+            Игрокам попавшим под метку следует набрать дистанцию друг от друга и выстроится в ряд чтобы не умереть от приземления Ледяных склепов и чтобы дать возможность остальным игрокам спрятаться от Плевков синдрагосы. После появления ледяных склепов рейд должен спрятаться за ними от Плевков и нанося урон по склепам для подальшего вызволения союзников. После четырёх плевков босс приземляется и продолжает атаковать свою цель.
+            <br><br><b>[Фаза 2]</b> Вторая фаза становится трудным испытанием для большинства игроков, хоть и является не очень трудной. Синдрагоса продолжает применять все свои способности кроме воздушной фазы.
+
+            <br>Вместо этого босс начинает взрываться тайной магией задевая всех игроков вокруг. Урон от взрыва вешает стак дебафа увеличивающего урон от любой магии. Избежать неприятностей игрокам поможет способность Синдрагосы Ледяная метка которую она начинает использовать на случайных игроков по одному. Цели заклинания Ледяная метка должны занять нужную для рейда позицию чтобы те могли сбросить стаки Неустойчивости, спрятавшись за ледяным склепом. Большую опасность Неустойчивость представляет для танка. Набрав слишком много стаков дебафа танк получает смертельный урон от Ледяного дыхания.
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+        </p>
+
+        <p><a name="12"></a></p>
+        <h2 class="Tooltips" data-toggle="tooltip" data-placement="bottom" data-html="true" title='<p align="center"><" class="img-responsive" style="width:100%" alt="Image"></p><span class="healthheader">Здоровье</span><br><span class="health">3,000,000/3,300,000 [10 об]<br>
+                                                                                                                                                                                                                                                                                                  6,000,000/3,300,000 [10 хм]<br>
+                                                                                                                                                                                                                                                                                                  13,400,000/11,000,000 [25 об]<br>
+                                                                                                                                                                                                                                                                                                  26,800,000/13,900,000 [25 хм]</span><hr><img src="SSS/spell_shadow_unholyfrenzy.jpg" height="17px">  10 минут <p></p>'>
+            Король-Лич
+        </h2>
+        <p align="justify">
+            <br><br>
+            <br><br>
+            <br><br><b><span style="color:#8B0000">Героический режим</span></b>:<br>
+        </p>
+
+        <p><a name="13"></a></p> 
+
+
+      <br><br><hr>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+          <a href="#1"><img src="SSS/ui-ej-boss-lord-marrowgar.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#2"><img src="SSS/ui-ej-boss-lady-deathwhisper.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#4"><img src="SSS/ui-ej-boss-deathbringer-saurfang.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#5"><img src="SSS/ui-ej-boss-festergut.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#6"><img src="SSS/ui-ej-boss-rotface.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#7"><img src="SSS/ui-ej-boss-professor-putricide.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#8"><img src="SSS/ui-ej-boss-blood-prince-council.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#9"><img src="SSS/ui-ej-boss-blood-queen-lanathel.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#10"><img src="SSS/ui-ej-boss-valithria-dreamwalker.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#11"><img src="SSS/ui-ej-boss-sindragosa.png" class="img-responsive" style="width:100%" alt="Image"></a><hr>
+          <a href="#12"><img src="SSS/ui-ej-boss-lord-marrowgar.png" class="img-responsive" style="width:100%" alt="Image"></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+    <a href="#14"><p>▲ вверх ▲</p></a>
+</footer>
+
+</body>
+</html>
