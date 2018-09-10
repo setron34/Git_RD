@@ -1,13 +1,11 @@
 (function () {
-	//Р±СѓРґСѓС‚ Р·Р°РїСЂРѕС€РµРЅС‹ РґРІР° СЃРєСЂРёРїС‚Р°
-	//РєРѕРіРґР° РѕР±Р° Р·Р°РїСЂРѕСЃР° Р·Р°РІРµСЂС€Р°С‚СЃСЏ, Р±СѓРґРµС‚ РїСЂРѕРІРµСЂРєР°
-	//РµСЃР»Рё РїРµСЂРІС‹Р№ СЃРєСЂРёРїС‚ Р·Р°РіСЂСѓР·РёР»СЃСЏ, Р° РІС‚РѕСЂРѕР№ - РЅРµС‚, Р·РЅР°С‡РёС‚ СЃС‚РѕРёС‚ Р°РґР±Р»РѕРє
+	
 
 	var s1_status;
 	var s2_status;
 	var done = function () {
-		if (typeof (s1_status) != 'undefined' && typeof (s2_status) != 'undefined') { //РѕР±Р° Р·Р°РїСЂРѕСЃР° Р·Р°РІРµСЂС€РёР»РёСЃСЊ
-			if (s1_status && !s2_status) { //С‚РѕР»СЊРєРѕ РїРµСЂРІС‹Р№ СЃРєСЂРёРїС‚ Р·Р°РіСЂСѓР¶РµРЅ
+		if (typeof (s1_status) != 'undefined' && typeof (s2_status) != 'undefined') { 
+			if (s1_status && !s2_status) { 
 				//adblock!
 				show_criteo();
 				new Image().src = "//counter.yadro.ru/hit;ucoz_adblock_total?r" + escape(document.referrer) + ((typeof (screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random();
@@ -15,7 +13,7 @@
 		}
 	}
 
-	//РїРµСЂРІС‹Р№ СЃРєСЂРёРїС‚
+
 	var s1 = document.createElement('script');
 	s1.onload = function () {
 		s1_status = true;
