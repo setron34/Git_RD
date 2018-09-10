@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Макросы</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="macro.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="test.js"></script>
+  <style>
+
+
+
+
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #c3e9e2;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+   <link rel="shortcut icon" href="RD_New_Logo.png">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="">Running Death</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tactics.html">Тактики</a></li>
+          <li><a href="guides.html">Гайды</a></li>
+          <li><a href="communications.html">Связь с нами</a></li>
+          <li><a href="addons.html">Аддоны</a></li>
+          <li><a href="BIS.html">BIS листы</a></li>
+          <li class="active"><a href="macro.html">Макросы</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p>Макросы:</p><br>
+      <p><a href="#11">Общие</a></p><br>
+      <p><a href="#1"><img src='Clas_Icon/mag.png' width ='35px'/> Mаг</a></p><br>
+      <p><a href="#2"><img src='Clas_Icon/warlock.png' width ='35px'/> Чернокнижник</a></p><br>
+      <p><a href="#3"><img src='Clas_Icon/priest.png' width ='35px'/> Жрец</a></p><br>
+      <p><a href="#4"><img src='Clas_Icon/rogue.png' width ='35px'/> Разбойник</a></p><br>
+      <p><a href="#5"><img src='Clas_Icon/druid.png' width ='35px'/> Друид</a></p><br>
+      <p><a href="#6"><img src='Clas_Icon/shaman.png' width ='35px'/> Шаман</a></p><br>
+      <p><a href="#7"><img src='Clas_Icon/hunter.png' width ='35px'/> Охотник</a></p><br>
+      <p><a href="#8"><img src='Clas_Icon/paladin.png' width ='35px'/> Паладин</a></p><br>
+      <p><a href="#9"><img src='Clas_Icon/warrior.png' width ='35px'/> Воин</a></p><br>
+      <p><a href="#10"><img src='Clas_Icon/deathknight.png' width ='35px'/> Рыцарь смерти</a></p><br>
+      <p><a href="#12">Дополнительно</a></p><br>
+
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <div id="div11">
+        <p><a name="14"></a></p> 
+        <h1>МАКРОСЫ:</h1>
+
+
+        <!-- ==================================== общие ====================================== -->
+        <p><a name="11"></a></p>
+        <p style="text-align: center">
+        <h1>ОБЩИЕ</h1>
+
+        <h3>Разбаг аддонов</h3>
+<textarea class="code" rows="7" readonly>
+/run local f = CreateFrame("frame",nil, UIParent); f:SetScript("OnUpdate", CombatLogClearEntries);
+/script CombatLogClearEntries()
+/recount toggle
+/recount toggle
+/tmw
+/tmw</textarea><br><hr>  
+
+<h3>Призыв маунта</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip 
+/cancelaura [no combat]Сила таунка
+/cancelaura [no combat] Целеустремленность железного дворфа
+/cancelaura [no combat]Скорость врайкулов
+/cast [flyable]ЛЕТАЮЩИЙ_МАУНТ;НАЗЕМНЫЙ_МАУНТ
+/use [combat] 8</textarea><br>
+надо прописать ваш ЛЕТАЮЩИЙ_МАУНТ и НАЗЕМНЫЙ_МАУНТ
+так же до призыва диспелится вне боя прок воли (возможно не все проки прописаны)
+<hr> 
+
+<h3>Выход из тела</h3>
+<textarea class="code" rows="1" readonly>
+/script RepopMe()</textarea><br><hr>  
+
+
+<h3>Эмблема героизма 10шт</h3>
+<textarea class="code" rows="3" readonly>
+/script local function buy (n,q) for i=1,100 do if n==GetMerchantItemInfo(i) then BuyMerchantItem(i,q) end end end buy ("Эмблема героизма",10) </textarea><br>
+
+<h3>Эмблема доблести 10шт</h3>
+<textarea class="code" rows="3" readonly>
+/script local function buy (n,q) for i=1,100 do if n==GetMerchantItemInfo(i) then BuyMerchantItem(i,q) end end end buy ("Эмблема доблести",10) </textarea><br>
+
+<h3>Эмблема завоеван 10шт</h3>
+<textarea class="code" rows="3" readonly>
+/script local function buy (n,q) for i=1,100 do if n==GetMerchantItemInfo(i) then BuyMerchantItem(i,q) end end end buy ("Эмблема завоевания",10) </textarea><br>
+
+<h3>с трюмфа в героизм по 10 шт</h3>
+<textarea class="code" rows="4" readonly>
+/script local function buy (n,q) for i=1,100 do if n==GetMerchantItemInfo(i) then BuyMerchantItem(i,q) end end end buy ("Эмблема завоевания",10); buy ("Эмблема доблести",10); buy ("Эмблема героизма",10);</textarea><br><hr>
+ 
+<h3>Повышенные настройки графики</h3>
+<textarea class="code" rows="9" readonly>
+/console maxFPS 60
+/console farclip 357
+/console spellEffectLevel 9
+/console SmallCull 0.010000
+/console groundEffectDensity 64
+/console groundEffectDist 140
+/console weatherDensity 3
+/console ffxGlow 1
+/console shadowLOD 1</textarea><br>
+
+<h3>Понижение настройки графики</h3>
+<textarea class="code" rows="9" readonly>
+/console maxFPS 30
+/console farclip 177
+/console spellEffectLevel 0
+/console SmallCull 0.070000
+/console groundEffectDensity 16
+/console groundEffectDist 70
+/console weatherDensity 0
+/console ffxGlow 0
+/console shadowLOD 0</textarea><br><br>
+<p style="text-align: left">
+maxFPS - ограничивает количество кадров в секунду. Не рекомендуется сильно занижать данный параметр - могут возникнуть проблемы с управлением.<br>
+farclip - устанавливает дальность видимости ландшафта и тумана. За пределами этого расстояния виден только рельеф.<br>
+spellEffectLevel - уровень эффектов от useинаний.<br>
+SmallCull - влияет на дальность видимости небольших объектов.<br>
+groundEffectDensity - используется для изменения количества наземных деталей, таких как трава.<br>
+groundEffectDist - изменяет дальность видимости наземных объектов.<br>
+weatherDensity - отвечает за уровень погодных эффектов.<br>
+ffxGlow - включает эффект свечения.<br>
+shadowLOD - включает отбрасывание теней.<br></p>
+<br><hr>  
+
+<h3>Отдаление камеры</h3>
+<textarea class="code" rows="1" readonly>
+/console cameradistancemaxfactor 5</textarea><br><br><hr>  
+
+<h3>Набор в Гильдию</h3>
+<textarea class="code" rows="3" readonly>
+/4 {треугольник}  _|_|_Гильдия Running Death проводит добор всех классов от 5.5 (знание класса) Рт19:30 МСК. Пронос Цлк|Рс|Ивк._|_|_</textarea><br><br><hr>  
+
+
+
+        <!-- ==================================== Mage ========================= -->
+        <p><a name="1"></a></p> 
+        <h1>Маг</h1><img src='Clas_Icon/mag.png' width ='35px'/>
+
+<h3>Ледяная глыба</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Ледяная глыба
+/stopcasting
+/cancelaura Ледяная глыба
+/cast Ледяная глыба</textarea><br><br>
+1 нажатие-вы используете глыбу, 2 нажатие-диспел глыбы.
+<hr>  
+
+
+<h3>Ротация за аркана</h3>
+<textarea class="code" rows="7" readonly>
+/castsequence [nochanneling: Чародейские стрелы, Чародейская вспышка ] reset=6  Чародейская вспышка,Чародейская вспышка,Чародейская вспышка,Чародейская вспышка,Чародейские стрелы;
+/use Мощь тайной магии
+/use Величие разума
+/use Стылая кровь</textarea><br><br>
+Ротация амага с прожимом Мощь тайной магии,Величие разума и  Стылая кровь.
+<hr> 
+
+<h3>Призыв и приморозка петом мага</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip Призыв элементаля воды
+/cast [nopet] Призыв элементаля воды 
+/stopcasting  
+/cast !Холод
+/petattack </textarea><br><br>
+1 нажатие-призывавется пет, если его нет, 2 нажатие- приморозка.
+<hr>  
+
+<h3>Полиморф</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Превращение(Уровень 4)
+/cast [@focus,harm,exsist] Превращение(Уровень 4) 
+/stopmacro [@focus, exists]
+/cast !Превращение(Уровень 4)</textarea><br><br>
+Если есть фокус - превращает по фокусу, если нет - то превращает цель.<br>
+Вместо Превращение можно использовать другую способность.
+<hr> 
+
+
+
+        <!-- ================================ Warlock ================== -->
+        <p><a name="2"></a></p> 
+        <h1>Чернокнижник</h1><img src='Clas_Icon/warlock.png' width ='35px'/>
+
+<h3>пет</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/petpassive
+/petfollow </textarea><br><br>
+пет следует за вами и не бьет никого.
+<hr>
+
+
+<h3>Доспехи</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/castsequence Доспех Скверны(Уровень 4), Демонический доспех(Уровень 8)</textarea><br><br>
+1 нажатие-используем Доспех Скверны, 2 нажатие - Демонический доспех.
+<hr>  
+
+
+
+<h3>Седакт</h3>
+<textarea class="code" rows="7" readonly>
+#showtooltip Соблазн
+/cast [nopet] Призыв суккуба(Призыв) 
+/petpassive
+/petstay
+/cast [@focus,harm,exsist] Соблазн 
+/stopmacro [@focus, exists]
+/cast Соблазн</textarea><br><br>
+<hr> 
+
+
+<h3>фир</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Страх(Уровень 3)
+/cast [@focus,harm,exsist] Страх(Уровень 3) 
+/stopmacro [@focus, exists]
+/cast !Страх(Уровень 3)</textarea><br><br>
+Если есть фокус - фирит по фокусу, если нет - то фирит цель.<br>
+Вместо Превращение можно использовать другую способность.
+<hr> 
+
+
+<h3>Диспел магии с себя</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/cast [nopet] Призыв охотника Скверны(Призыв)
+/use [@player] Пожирание магии(Уровень 7)</textarea><br><br>
+Если есть фокус - фирит по фокусу, если нет - то фирит цель.<br>
+Вместо Превращение можно использовать другую способность.
+<hr> 
+
+<h3>чарка на оружие</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/use Могучий камень огня
+/use 16</textarea><br><br>
+Вместо Могучий камень огня можно использовать Могучий камень чар.
+<hr> 
+
+<h3>Страх по фокусу</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip
+/cast [@focus] Страх</textarea><br><br>
+Страх по фокусу, что бы фирять на чемпах в ик.
+<hr> 
+
+
+        <!-- =================================== Priest========================= -->
+        <p><a name="3"></a></p> 
+        <h1>Жрец</h1><img src='Clas_Icon/priest.png' width ='35px'/>
+
+<h3>Гимн на хп</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip Божественный гимн(Уровень 1)
+/use !Внутреннее сосредоточение
+/use !Божественный гимн(Уровень 1)</textarea><br><br>
+<hr>         
+
+
+<h3>пет</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/use Исчадие Тьмы
+/petattack</textarea><br><br>
+<hr>    
+
+<h3>Бафы в 1 кнопке</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/castsequence Внутренний огонь(Уровень 9), Молитва стойкости(Уровень 4), Молитва духа(Уровень 3), Молитва защиты от темной магии(Ур. 3)</textarea><br><br>
+<hr>  
+
+<h3>Пытка разума</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Пытка разума(Уровень 9)
+/cancelaura Слияние с Тьмой
+/cancelaura Контроль над разумом
+/use [nochanneling:Пытка разума] Пытка разума(Уровень 9)</textarea><br><br>
+<hr>  
+
+
+<h3>доты</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/castsequence reset=combat Левитация,Всепожирающая чума(Уровень 9),Слово Тьмы: Боль(Уровень 12),Левитация</textarea><br><br>
+доты с птички.
+<hr>  
+
+<h3>швд</h3>
+<textarea class="code" rows="7" readonly>
+#showtooltip Слово тьмы: Смерть
+/cancelaura Слияние с тьмой
+/cancelaura Контроль над разумом
+/console targetNearestDistance 10.000000
+/targetenemy [noharm][dead]
+/console targetNearestDistance 41.000000
+/cast [harm,nodead] Слово тьмы: Смерть</textarea><br><br>
+одна из вариации сбития контроля по присту в пвп.
+<hr> 
+
+
+
+
+
+        <!-- ==================================== Rogue ============================= -->
+        <p><a name="4"></a></p> 
+        <h1>Разбойник</h1><img src='Clas_Icon/rogue.png' width ='35px'/>
+
+<h3>напул</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip
+/cast [target=targettarget] Маленькие хитрости</textarea><br><br>
+напул в цель цели (чаще всего там танк)
+<hr>
+
+
+<h3>чипшот</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip Подлый трюк
+/use Умысел
+/use Подлый трюк</textarea><br><br>
+меняете Подлый трюк на другой спел и юзаете в саб роге.
+<hr>
+
+
+<h3>блиды</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip 
+/stopattack
+/use [stealth] Умысел
+/stopattack
+/use [stealth]Гаррота; [nostealth]Рваная рана
+/stopattack</textarea><br><br>
+Вешаем кровотечения на врага, который находится в сапе (стоять под углом 90°, что бы не бить автоатакой)
+<hr>
+
+
+<h3>сап</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip 
+/use [stealth] Ошеломление(Уровень 4)); [nostealth]Незаметность</textarea><br><br>
+в инвизе дает сап, без него - входит в инвиз
+<hr>
+
+<h3>сап через шс</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/use Шаг сквозь тень
+/use [stealth] Ошеломление(Уровень 4)); </textarea><br><br>
+<hr>
+
+<h3>автосап</h3>
+<textarea class="code" rows="5" readonly>
+/console targetNearestDistance 10.000000
+/targetenemy [noharm][dead]
+/console targetNearestDistance 41.000000
+/cast [harm,nodead] Шаг сквозь тень
+/use [stealth] Ошеломление(Уровень 4)); </textarea><br><br>
+самый простой автосап...
+<hr>
+
+<h3>метательное</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Смертельный бросок(Уровень 3)
+/use Бросок
+/use Смертельный бросок(Уровень 3)
+/use Бросок</textarea><br><br>
+<hr>
+
+<h3>кош+ваниш</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Исчезновение(Уровень 3)
+/use Плащ Теней
+/use Исчезновение(Уровень 3)
+/use Плащ Теней</textarea><br><br>
+<hr>
+
+
+
+
+<h3>препа на 100%</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip Подготовка
+/use Спринт(Уровень 3)
+/use Подготовка</textarea><br><br>
+
+<hr>
+
+
+<h3>эвага</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip Ускользание(Уровень 2)
+/use Ускользание(Уровень 2)
+/use Ложный выпад(Уровень 8)</textarea><br><br>
+урезает урон от БШ вара
+<hr>
+
+<h3>яды</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/use [button:1] Калечащий яд; [button:2] Нейтрализующий яд VII
+/use [button:1] 16; [button:2] 17</textarea><br><br>
+лкм- калечащий яд на правое оружие(16 слот), пкм - нейтрализующий яд на левое оружие(17 слот).
+<hr>
+
+<h3>вскрытие ларей</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/use Взлом замка
+/use НАЗВАНИЕ_ЛАРЯ</textarea><br><br>
+вместо "название_ларя" пишите название ларя, который вам надо открыть(из сумки)
+<hr>
+
+
+
+        <!-- ================================== Druid =================================== -->
+        <p><a name="5"></a></p>
+        <h1>Друид</h1><img src='Clas_Icon/druid.png' width ='35px'/>
+<h3>котябра</h3>
+<textarea class="code" rows="10" readonly>
+#showtooltip
+/stopattack
+/cast [combat] !Слиться с тенью(Расовая)
+/stopattack
+/cast [form:0/1/2/4/5] Облик кошки(Смена облика)
+/stopattack
+/cast [nostealth] !Крадущийся зверь
+/stopattack
+/cast [stealth, harm, exists] !Наскок(Уровень 5)
+/stopattack</textarea><br><br>
+если вы в бою - выходит из боя, если не в бою: 1 нажатие - вход в кота, 2 - инвиз, 3 - стан из кота.
+<hr>
+
+<h3>увечье_мишка</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 
+/use Увечье (медведь)(Уровень 5)
+/use !Трепка(Уровень 10)</textarea><br><br>
+<hr>
+
+<h3>рес</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/cast [combat] Возрождение(Уровень 7)
+/cast [nocombat] Оживление(Уровень 7)</textarea><br><br>
+в бою - бр, в не боя - Оживление.
+<hr>
+
+<h3>котиный_решифт</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip
+/cast !Облик кошки(Смена облика)</textarea><br><br>
+обновляет облик кота и сбрасывает замедление/сковывание.<br>
+меняете название облика для мишки и тоже работает.
+<hr>
+
+<h3>чардж</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip Звериная атака - медведь
+/use [form:2/3/4/5/6/0] !Облик лютого медведя(Смена облика)
+/cast [target=focus] Звериная атака - медведь
+/cast [target=focus] Исступление
+/cast [target=focus] Оглушить(Уровень 3)</textarea><br><br>
+использует рывок по фокусу (и стан) не зависимо от облика (жать более 1 раза)
+<hr>
+
+
+<h3>циклон</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip Смерч
+/stopattack
+/use  [@focus,harm,exsist] Смерч
+/stopmacro [@focus,exists,nodead,harm]
+/use Смерч</textarea><br><br>
+если есть фокус - то в него кастит, если нет фокуса - то в цель.<br>
+можно Смерч заменить на другой спел.
+<hr>
+
+<h3>шред</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip Полоснуть(Уровень 9)
+/use Полоснуть(Уровень 9)
+/startattack</textarea><br><br>
+Начинает автоатаку даже если не ударите спелом<br>
+Вместо полосования можете использовать другие атаки.
+<hr>
+
+
+        <!-- ====================================== Shaman ===================================== -->
+        <p><a name="6"></a></p> 
+        <h1>Шаман</h1><img src='Clas_Icon/shaman.png' width ='35px'/>
+
+<h3>Удар бури</h3>
+<textarea class="code" rows="8" readonly>
+#showtooltip 
+/use !Удар бури
+/startattack
+/petdefensive
+/use Поступь духа
+/use Прыжок духа волка
+/use Оглушить
+/petattack</textarea><br><br>
+использует удар бури,начинает автоатаку,использует спринт и оглушение при волках, и заставляет и бить вашу цель.
+<hr>
+
+
+<h3>кик</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/stopcasting
+/use Пронизывающий ветер</textarea><br><br>
+сбитие каста
+<hr>
+
+
+
+        <!-- ======================================== Hunter ===================================== -->
+        <p><a name="7"></a></p> 
+        <h1>Охотник</h1><img src='Clas_Icon/hunter.png' width ='35px'/>
+
+<h3>напул</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip
+/cast [target=targettarget] Перенаправление</textarea><br><br>
+напул в цель цели (чаще всего там танк)
+<hr>
+
+<h3>бурст</h3>
+<textarea class="code" rows="9" readonly>
+#showtooltip
+/use Быстрая стрельба
+/use Команда "Взять!"
+/use 13
+/use 14
+/use Зов дикой природы
+/use Неистовый вой(Уровень 6)
+/use Раж
+/use Укус(Уровень 11)</textarea><br><br>
+<hr>
+
+
+<h3>дамаг</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/use Прицельный выстрел(Уровень 9)
+/use Команда "Взять!"
+/petattack </textarea><br><br>
+вместо Прицельный выстрел можно использовать другой спел.
+<hr>
+
+
+<h3>пет</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip
+/petpassive
+/petfollow </textarea><br><br>
+пет следует за вами и не бьет никого.
+<hr>
+
+
+
+
+
+        <!-- ===================================== Paladin ======================================= -->
+        <p><a name="8"></a></p> 
+        <h1>Паладин</h1><img src='Clas_Icon/paladin.png' width ='35px'/>
+<h3>флешка_напу</h3>
+<textarea class="code" rows="2" readonly>
+#showtooltip
+/use [@ник_напа]  Вспышка Света(Уровень 9)</textarea><br><br>
+вместо ник_напа пишите ник.
+<hr>
+
+<h3>флешка_напу2</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/targetfriend
+/use Вспышка Света(Уровень 9)
+/targetlastenemy</textarea><br><br>
+хилит друга, который перед вами.
+<hr>
+
+<h3>бабл</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/cancelaura Божественный щит
+/use Божественный щит
+/startattack</textarea><br><br>
+1 нажатие - бабл, 2 - диспел бабла.
+<hr>
+
+<h3>буря</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/use Божественная буря
+/cancelaura проклятие хаоса
+/startattack</textarea><br><br>
+используем бурю, начинаем автоатаку и диспелим прок ШМа, что бы он снова стакался и дамагал на 2к+.
+<hr>
+
+<h3>свич_пух</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip 16
+/equipslot 16 Темная Скорбь
+/equipslot 16 ВАША_ОДНОРУЧКА
+/equipslot 17 ВАШ_ЩИТ</textarea><br><br>
+1 нажатие - одеем одноручку+щит, 2 - шм.
+<hr>
+
+<h3>втф</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip [equipped:Щиты]Щит праведности(Уровень 2);Экзорцизм(Уровень 9)
+/use Длань возмездия
+/cast [equipped:Щиты] Щит праведности(Уровень 2)
+/cast [noequipped:Щиты] Экзорцизм(Уровень 9)</textarea><br><br>
+без щита - Экзорцизм, со щитом - Щит праведности.
+<hr>
+
+<h3>фир</h3>
+<textarea class="code" rows="8" readonly>
+#showtooltip 
+/target Вороная горгулья
+/use [help] Очищение
+/cast [harm] !Изгнание зла
+/targetlasttarget
+/targetenemy
+/cast [harm] !Изгнание зла
+/targetlasttarget</textarea><br><br>
+фиряет гаргу если есть, если дружественная - диспелит её, если нет гарги - фиряет цель/пета. Жать много раз.
+<hr>
+
+<h3>щиток</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip 
+/use [nocombat]Священный щит(Уровень 1)
+/stopmacro [nocombat]
+/use [target=targettarget, help,combat]Священный щит(Уровень 1)
+/use [target=focustarget,combat]Священный щит</textarea><br><br>
+вне боя вешает щиток в цель, в бою - в цель цели (её будут типо бить).
+<hr>
+
+
+
+        <!-- ========================================= Warrior ======================================== -->
+        <p><a name="9"></a></p> 
+        <h1>Воин</h1><img src='Clas_Icon/warrior.png' width ='35px'/>
+<h3>кровожадность</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/use Кровожадность
+/use !Удар героя(Уровень 13)
+/startattack</textarea><br><br>
+юзает кровожадность и удар героя.
+<hr>
+
+<h3>Вихрь</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip
+/use Вихрь
+/use !Рассекающий удар(Уровень 8)
+/startattack</textarea><br><br>
+юзаем вихрь и рассекающий удар.
+<hr>
+
+
+<h3>свич_пух</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip 16
+/equipslot 16 Темная Скорбь
+/equipslot 16 ВАША_ОДНОРУЧКА
+/equipslot 17 ВАШ_ЩИТ</textarea><br><br>
+1 нажатие - одеем одноручку+щит, 2 - шм.
+<hr>
+
+<h3>дизарм</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Разоружение
+/use [form:1/3] !Оборонительная стойка
+/use [form:2] !Разоружение
+/use [form:2] !Боевая стойка</textarea><br><br>
+Жать больше 1 раза.
+<hr>
+
+<h3>интерцепт</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Перехват
+/use [form:1/2] Стойка берсерка
+/use [form:3] Перехват
+/use [form:3] Боевая стойка</textarea><br><br>
+Жать больше 1 раза.
+<hr>
+
+<h3>кик</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip 
+/cast [stance:1] !Удар щитом
+/cast [stance:2] !Удар щитом
+/cast [stance:3] Зуботычина</textarea><br><br>
+Для удара щитом нужен щит в руке.
+<hr>
+
+<h3>вмешательство</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip Вмешательство
+/use [form:1/3] !Оборонительная стойка
+/targetfriend
+/use [form:2] Вмешательство
+/targetlastenemy
+/use [form:2]Боевая стойка</textarea><br><br>
+Жать более 1 раза.
+<hr>
+
+<h3>сейв</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip Глухая оборона
+/use [form:1/3] !Оборонительная стойка
+/use [form:2] !Глухая оборона
+/use [combat] !Кровавая ярость
+/use !Безудержное восстановление
+/use Большой флакон с лечебным зельем</textarea><br><br>
+Жать более 1 раза, нужен одетый щит.
+<hr>
+
+
+
+        <!-- ========================================= Deathknight ======================================== -->
+        <p><a name="10"></a></p> 
+        <h1>Рыцарь смерти</h1><img src='Clas_Icon/deathknight.png' width ='35px'/>
+
+<h3>ЛП</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip
+/cast Ледяное прикосновение(Уровень 5)
+/cast Рунический удар
+/petfollow
+/petattack
+/startattack</textarea><br><hr>   
+
+
+<h3>стан петом</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip Отгрызть
+/petdefensive
+/cast !Прыжок
+/cast !Отгрызть
+/petdefensive</textarea><br><br>
+
+<hr>
+
+<h3>призыв гарги</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip Призыв горгульи
+/use Усиление рунического оружия
+/use Призыв горгульи
+/petattack
+/use 10
+/time</textarea><br><br>
+
+<hr>
+
+<h3>свич_пух</h3>
+<textarea class="code" rows="3" readonly>
+#showtooltip 16
+/equipslot 16 Темная Скорбь
+/equipslot 16 Бринтролль, Костяной Судья</textarea><br><br>
+Названия оружий меняем на те, которые хотите использовать.
+<hr>
+ 
+
+
+       
+<h3>кик</h3>
+<textarea class="code" rows="10" readonly>
+#showtooltip Заморозка разума
+/cast [nomod] Темная власть 
+/cast [nomod] Заморозка разума
+/stopmacro [nomod]
+/target [mod:ctrl] focus
+/cast  Темная власть 
+/cast  Заморозка разума
+/use Ледяные оковы
+/targetlasttarget [mod:ctrl]
+/stopmacro</textarea><br><br>
+сбивает каст цели (и таунт), при зажатом КТРЛ сбивает по фокусу и дает оковы.
+<hr>
+
+
+<h3>оковы</h3>
+<textarea class="code" rows="7" readonly>
+#showtooltip 
+/cast Ледяные оковы
+/petattack
+/petfollow
+/petattack
+/startattack
+/use 10</textarea><br><br>
+юзает оковы и управляет петом/гаргой.
+<hr>
+
+
+<h3>плетка</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip
+/cast Удар Плети(Уровень 4)
+/cast !Рунический удар
+/use [combat]10
+/startattack
+/use Саронитовая бомба</textarea><br><br>
+
+<hr>
+
+
+<h3>грип и стан</h3>
+<textarea class="code" rows="9" readonly>
+#showtooltip Хватка смерти
+/use Темная власть
+/use Хватка смерти
+/use [nopet] Воскрешение мертвых
+/stopattack
+/cast [pet] Отгрызть
+/startattack
+/time
+/cancelaura [combat] Перерождение</textarea><br><br>
+грип+стан петом+диспел личборна, если нет пета - зовет его.
+<hr>
+
+
+<h3>сало</h3>
+<textarea class="code" rows="4" readonly>
+#showtooltip Удушение
+/use !Удушение
+/use !Кровоотвод
+/stopmacro</textarea><br><br>
+
+<hr>
+
+
+<h3>флешка</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip Лик смерти(Уровень 5)
+/use !Перерождение
+/use [target=player] !Лик смерти(Уровень 5)
+/use Камень здоровья из Скверны
+/use Камень здоровья из Скверны
+/time</textarea><br><br>
+использует перерождение и лечит коилами.
+<hr>
+
+
+<h3>2шанс</h3>
+<textarea class="code" rows="8" readonly>
+#showtooltip Смертельный союз
+/cast !Отгрызть
+/use [pet] !Смертельный союз
+/use [nopet] !Воскрешение мертвых
+/use Камень здоровья из Скверны
+/use Боевой штандарт Альянса
+/use Захват рун
+/use [@Восставгий вурдалак]Смертельный союз</textarea><br><br>
+призывает пета, если его нет. Если он есть, то дает стан в цель и съедает его.
+<hr>
+
+
+
+<h3>взрыв пета</h3>
+<textarea class="code" rows="8" readonly>
+#showtooltip Взрыв трупа(Уровень 5)
+/use [nopet] !Воскрешение мертвых
+/cast [pet] !Отгрызть
+/petpassive
+/petstay
+/cast [target=pet] !Взрыв трупа(Уровень 5)
+/targetlastenemy
+/use !Взрыв трупа(Уровень 5)</textarea><br><br>
+Жать больше 1 раза
+<hr>
+
+<h3>грип_в2</h3>
+<textarea class="code" rows="6" readonly>
+#showtooltip
+/use  [@focus,harm,exsist] Хватка смерти
+/cast [@focus,harm,exsist] !Прыжок
+/cast [@focus,harm,exsist] !Отгрызть
+/stopmacro [@focus, exists]
+/use Войско мертвых</textarea><br><br>
+дает стан петом и грип по фокусу, если нет фокуса - завот войско.
+<hr>
+
+<h3>сейв</h3>
+<textarea class="code" rows="8" readonly>
+#showtooltip Незыблемость льда
+/use [combat] Проржавевший костяной ключ
+/petpassive
+/petstay
+/use [pet] !Сжаться
+/use  !Кровоотвод
+/use [combat] !Власть льда
+/use Незыблемость льда</textarea><br><br>
+прожимает сейв обилки+ключ если он одет+власть льда+дэфает пета.
+<hr>
+
+<h3>шилд</h3>
+<textarea class="code" rows="5" readonly>
+#showtooltip Костяной щит
+/use !Костяной щит
+/use [nopet] Воскрешение мертвых
+/petpassive
+/petfollow</textarea><br><br>
+заставляет пета идти за вами + обновляет костяной щит.
+<hr>
+
+
+
+        <!-- =================================== ДОПОЛНИТЕЛЬНОЕ ========================= -->
+        <p><a name="12"></a></p>
+        <h3>БОНУС</h3>
+        
+        <a href="https://www.noob-club.ru/index.php?topic=26207.0">Подробный гайд по макросам</a>
+        будет полезен для начала <br>
+        <a href="https://sites.google.com/site/mangosraskrutkaservera/gajd-po-sozdani">Так же подробный гайд по макросам</a>
+        но так себе оформление с: <br>
+        <a href="http://www.slashfocus.ru/multibox/item/multiboxing-v-world-of-warcraft-prodolzhenie">Весьма интересный сайт</a>
+        - есть интересные консольные команды <br>
+
+        
+        <a href="https://vk.com/id479121650">Можете писать сюда за пояснением работы макросов или при желании добавления макросов на сайте</a>
+
+
+</div>
+      <br><br>
+      
+      <hr>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+            <img src="https://wowjp.net/_pu/217/36926103.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+        <p><a href="#14">▲ вверх ▲</a></p>
+</footer>
+
+</body>
+</html>
